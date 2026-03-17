@@ -1,0 +1,26 @@
+meta {
+  name: CREATE_SUB_MODULE
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/submodule/create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "SubModuleName": "test BC",
+      "SubModuleDescription": "test",
+      "ModuleID":"689b212dd832b1fb38a784f6",
+      "CommonAttributes": {
+        "Created_By": "689623663511438da6a85db8"
+      }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

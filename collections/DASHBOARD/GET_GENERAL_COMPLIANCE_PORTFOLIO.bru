@@ -1,0 +1,79 @@
+meta {
+  name: GET_GENERAL_COMPLIANCE_PORTFOLIO
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/general/compliance/portfolio?page=1&limit=1
+  body: none
+  auth: none
+}
+
+params:query {
+  page: 1
+  limit: 1
+}
+
+settings {
+  encodeUrl: true
+}
+
+example {
+  name: GET_GENERAL_COMPLIANCE_PORTFOLIO
+  
+  request: {
+    url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/general/compliance/portfolio
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    headers: {
+      Date: Fri, 20 Feb 2026 06:46:18 GMT
+      Content-Type: application/json
+      Content-Length: 435
+      X-Request-Id: a1f23d3a-aa64-459e-a9b9-c93bb1d52349
+      Vary: Origin
+    }
+  
+    status: {
+      code: OK
+      text: 200
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+            "challans": {
+                "completed": 1859,
+                "pending": 209,
+                "total": 2068
+            },
+            "licenses": {
+                "active": 343,
+                "expired": 174,
+                "expiring": 1,
+                "inprogress": 102,
+                "total": 638
+            },
+            "registers": {
+                "applicable_registers": 70924,
+                "available_registers": 0,
+                "completed_registers": 70,
+                "missing_registers": 3492,
+                "partial_registers": 67362
+            },
+            "returns": {
+                "total_returns_applicable": 1175,
+                "total_returns_at_risk": 0,
+                "total_returns_completed": 593,
+                "total_returns_delayed": 0,
+                "total_returns_pending": 0
+            }
+        }
+      '''
+    }
+  }
+}

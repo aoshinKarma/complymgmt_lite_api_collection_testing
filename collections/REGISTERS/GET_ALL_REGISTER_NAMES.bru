@@ -1,0 +1,84 @@
+meta {
+  name: GET_ALL_REGISTER_NAMES
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/register_processing/view/register/names/multiple
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
+
+example {
+  name: GET_ALL_REGISTER_NAMES
+  
+  request: {
+    url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/register_processing/view/register/names/multiple
+    method: GET
+    mode: none
+  }
+  
+  response: {
+    headers: {
+      Date: Wed, 04 Feb 2026 06:11:18 GMT
+      Content-Type: application/json
+      Content-Length: 761
+      X-Request-Id: 7fee6060-e6a0-4938-9b6f-65bc5950d1e7
+      Vary: Origin
+    }
+  
+    status: {
+      code: OK
+      text: 200
+    }
+  
+    body: {
+      type: json
+      content: '''
+        [
+            {
+                "_id": "6981c984eb9dd86d8d56e9e3",
+                "register_name": "Form II Muster-Roll-cum-Wages Register Part-I"
+            },
+            {
+                "_id": "6981c984eb9dd86d8d56e9e4",
+                "register_name": "Form II Muster-Roll-cum-Wages Register Part-II"
+            },
+            {
+                "_id": "6981c984eb9dd86d8d56e9e5",
+                "register_name": "Form O-Leave Book - I"
+            },
+            {
+                "_id": "6981c984eb9dd86d8d56e9e6",
+                "register_name": "Form O-Leave Book - II"
+            },
+            {
+                "_id": "6981c984eb9dd86d8d56e9e7",
+                "register_name": "Form O-Leave Book - III"
+            },
+            {
+                "_id": "6981c984eb9dd86d8d56e9e8",
+                "register_name": "Form D Register under Equal Remuneration"
+            },
+            {
+                "_id": "6981c984eb9dd86d8d56e9e9",
+                "register_name": "Form 10 Maternity Benefit Register"
+            },
+            {
+                "_id": "6981c984eb9dd86d8d56e9ea",
+                "register_name": "Employee ID Card"
+            },
+            {
+                "_id": "6981c984eb9dd86d8d56e9eb",
+                "register_name": "Attendance cum Wages Slip I"
+            }
+        ]
+      '''
+    }
+  }
+}

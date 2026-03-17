@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "GENERAL_HELPDESK",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

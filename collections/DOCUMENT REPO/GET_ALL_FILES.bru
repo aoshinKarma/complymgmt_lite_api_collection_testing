@@ -1,0 +1,19 @@
+meta {
+  name: GET_ALL_FILES
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/document_repository/view/files
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  files: @file(/C:/Users/kmc729/Downloads/Testing Observations 20.08.2025.xlsx|/C:/Users/kmc729/Downloads/Client Onboarding sheet Consolidated A&C  consultancy outsourcing 1.xlsx)
+}
+
+settings {
+  encodeUrl: true
+}

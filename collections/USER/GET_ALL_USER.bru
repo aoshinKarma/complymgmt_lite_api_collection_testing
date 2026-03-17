@@ -1,0 +1,15 @@
+meta {
+  name: GET_ALL_USER
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/user/view/multiple
+  body: none
+  auth: none
+}
+
+settings {
+  encodeUrl: true
+}

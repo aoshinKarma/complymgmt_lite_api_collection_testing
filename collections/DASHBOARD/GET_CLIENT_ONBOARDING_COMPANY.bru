@@ -1,0 +1,1600 @@
+meta {
+  name: GET_CLIENT_ONBOARDING_COMPANY
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/client/onboarding/company?company_name=SBI General Insurance Company Limited
+  body: none
+  auth: inherit
+}
+
+params:query {
+  company_name: SBI General Insurance Company Limited
+}
+
+settings {
+  encodeUrl: true
+}
+
+example {
+  name: GET_CLIENT_ONBOARDING_COMPANY
+  
+  request: {
+    url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/client/onboarding/company?company_name=SBI General Insurance Company Limited
+    method: GET
+    mode: none
+    params:query: {
+      company_name: SBI General Insurance Company Limited
+    }
+  }
+  
+  response: {
+    headers: {
+      Date: Fri, 20 Feb 2026 06:48:51 GMT
+      Content-Type: application/json
+      Content-Length: 25170
+      X-Request-Id: a6f23d3a-aa64-459e-a9b9-c93bb1d52349
+      Vary: Origin
+    }
+  
+    status: {
+      code: OK
+      text: 200
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+            "location_module_map": {
+                "agartala": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "agra": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "ahemdabad ii": [
+                    "challans management"
+                ],
+                "ahmedabad": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "ahmedabad - ii": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "aizwal": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "akola": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "allahabad": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "alwar": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "amritsar": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "asarganj": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "aurangabad": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "baharampur": [
+                    "challans management",
+                    "license management"
+                ],
+                "balasore": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "bangalore": [
+                    "challans management"
+                ],
+                "bareilly": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "barelly": [
+                    "challans management"
+                ],
+                "bathinda": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "bengaluru": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "berhampore": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "berhampur": [
+                    "challans management"
+                ],
+                "bhagalpur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "bharuch": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "bhatinda": [
+                    "challans management"
+                ],
+                "bhavnagar": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "bhopal": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "bhubaneshwar": [
+                    "challans management"
+                ],
+                "bhubaneswar": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "bidhan nagar": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "bikaner": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "bilaspur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "borivali": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "chandigarh": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "chattisgarh": [
+                    "challans management"
+                ],
+                "chennai": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "chennai ii": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "cochin": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "coimbatore": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "connaught place": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "dadar": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "davangere": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "deharadun": [
+                    "challans management"
+                ],
+                "dehradun": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "dellhi": [
+                    "challans management"
+                ],
+                "dhanbad": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "dimapur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "durgapur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "gandhidham": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "gandhinagar": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "gangtok": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "ghatkopar": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "goa": [
+                    "challans management"
+                ],
+                "gorakhapur": [
+                    "challans management"
+                ],
+                "gorakhpur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "gujarat": [
+                    "challans management"
+                ],
+                "gulbarga": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "guna": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "guntur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "gurgaon": [
+                    "challans management"
+                ],
+                "gurugram": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "guwahati": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "gwalior": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "haldwani": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "hisar": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "hissar": [
+                    "challans management"
+                ],
+                "hoshiarpur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "hoshirapur": [
+                    "challans management"
+                ],
+                "hubli": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "hyderabad ii": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "hyderabad ro": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "imphal": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "indore": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "jabalpur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "jaipur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "jalandhar": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "jammu": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "jamnagar": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "jamshedpur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "jayanagar": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "jhansi": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "jodhapur": [
+                    "challans management"
+                ],
+                "jodhpur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "jorhat": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "kanpur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "karnal": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "karnataka": [
+                    "challans management"
+                ],
+                "kharagpur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "khargpur": [
+                    "challans management"
+                ],
+                "kolhapur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "kolkata": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "kolkata ro": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "kollam": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "kota": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "kottayam": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "kozhikode": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "kurnool": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "lucknow": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "ludhiana": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "madhya pradesh": [
+                    "challans management"
+                ],
+                "madurai": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "maharashtra": [
+                    "challans management"
+                ],
+                "managlore": [
+                    "challans management"
+                ],
+                "mandi": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "mangalore": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "maurai": [
+                    "challans management"
+                ],
+                "meerut": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "moradabad": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "mumbai": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "mumbai bkc": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "muzaffarpur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "mysore": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "nagpur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "nalgonda": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "nanded": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "nashik": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "nehru place delhi": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "new delhi lho": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "new delhi ro": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "nizamabad": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "noida": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "odisha": [
+                    "challans management"
+                ],
+                "orissa": [
+                    "challans management"
+                ],
+                "palanpur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "panji": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "patiala": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "patna": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "port blair": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "puducherry": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "pujurgutta": [
+                    "challans management"
+                ],
+                "pundcherry": [
+                    "challans management"
+                ],
+                "pune": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "pune - health hub": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "pune ii": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "purnea": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "raipur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "rajahmundry": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "rajamundry": [
+                    "challans management"
+                ],
+                "rajkot": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "ranchi": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "ratlam": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "rohatak": [
+                    "challans management"
+                ],
+                "rohtak": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "roukela": [
+                    "challans management"
+                ],
+                "rourkela": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "salem": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "sambalpur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "satna": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "secundarabad": [
+                    "challans management"
+                ],
+                "shillong": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "shilong": [
+                    "challans management"
+                ],
+                "shimla": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "silchar": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "siliguri": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "srinagar": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "surat": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "thane hub": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "thanjavur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "thrissur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "tiruchirapalli": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "tiruchirapally": [
+                    "challans management"
+                ],
+                "tirupati": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "trivandrum": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "trivendrum": [
+                    "challans management"
+                ],
+                "udaipur": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "vadodara": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "vapi": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "varanasi": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "vashi": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "vellore": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "vijayawada": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "vijaywada": [
+                    "challans management"
+                ],
+                "vizag": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "warangal": [
+                    "audit",
+                    "challans management",
+                    "registers and records",
+                    "returns management",
+                    "advisory and research",
+                    "license management",
+                    "notice and inspection"
+                ],
+                "west bengal": [
+                    "challans management"
+                ]
+            },
+            "locations": [
+                "Baharampur",
+                "Mangalore",
+                "New Delhi RO",
+                "Vijayawada",
+                "Imphal",
+                "Patna",
+                "Meerut",
+                "New Delhi LHO",
+                "Vizag",
+                "Tirupati",
+                "Purnea",
+                "Alwar",
+                "Warangal",
+                "Rohtak",
+                "Dimapur",
+                "Aizwal",
+                "Gurugram",
+                "Palanpur",
+                "Guwahati",
+                "Connaught Place",
+                "Hyderabad II",
+                "Raipur",
+                "Jorhat",
+                "Nizamabad",
+                "Jamnagar",
+                "Panji",
+                "Kottayam",
+                "Kollam",
+                "Bilaspur",
+                "Silchar",
+                "Muzaffarpur",
+                "Bhagalpur",
+                "Nehru Place Delhi",
+                "Nalgonda",
+                "Ahmedabad",
+                "New Delhi",
+                "HO",
+                "Bhavnagar",
+                "Gangtok",
+                "Bhopal",
+                "Hyderabad RO",
+                "Bharuch",
+                "Coimbatore",
+                "Bhubaneswar",
+                "Thane Hub",
+                "Rajkot",
+                "Pune",
+                "Gandhinagar",
+                "Dehradun",
+                "Ahmedabad - II",
+                "Indore",
+                "Mumbai",
+                "Gandhidham",
+                "Chennai",
+                "Ranchi",
+                "Mandi",
+                "Cochin",
+                "Srinagar",
+                "Aurangabad",
+                "Chandigarh",
+                "Udaipur",
+                "Thanjavur",
+                "Shimla",
+                "Kozhikode",
+                "Bengaluru",
+                "Nashik",
+                "Rourkela",
+                "Ludhiana",
+                "Bareilly",
+                "Karnal",
+                "Thane",
+                "Jodhpur",
+                "Agra",
+                "Madurai",
+                "Puducherry",
+                "Gulbarga",
+                "Kharagpur",
+                "Jalandhar",
+                "Hisar",
+                "Berhampore",
+                "Ghatkopar",
+                "Jabalpur",
+                "Bikaner",
+                "Nagpur",
+                "Jayanagar",
+                "Tiruchirapalli",
+                "Davangere",
+                "Surat",
+                "Gwalior",
+                "Hubli",
+                "Mysore",
+                "Allahabad",
+                "Gorakhpur",
+                "Shillong",
+                "Thrissur",
+                "Vapi",
+                "Varanasi",
+                "Jamshedpur",
+                "Kanpur",
+                "Ratlam",
+                "Salem",
+                "Jhansi",
+                "Noida",
+                "Kota",
+                "Lucknow",
+                "Borivali",
+                "Moradabad",
+                "Bathinda",
+                "Kolhapur",
+                "Asarganj",
+                "Bidhan Nagar",
+                "Kolkata",
+                "Haldwani",
+                "Durgapur",
+                "Vellore",
+                "Siliguri",
+                "Amritsar",
+                "Patiala",
+                "Kolkata RO",
+                "Pune II",
+                "Mumbai BKC",
+                "Dadar",
+                "Trivandrum",
+                "Hyderabad",
+                "Hoshiarpur",
+                "Akola",
+                "Jaipur",
+                "Vashi",
+                "Vadodara",
+                "Balasore",
+                "Dhanbad",
+                "Agartala",
+                "Sambalpur",
+                "Satna",
+                "Guna",
+                "Nanded",
+                "Jammu",
+                "Chennai II",
+                "Pune - Health Hub",
+                "Port Blair",
+                "Guntur",
+                "Rajahmundry",
+                "Kurnool",
+                "Delhi",
+                "Hoshirapur",
+                "Khargpur",
+                "Trivendrum",
+                "Berhampur",
+                "Bhatinda",
+                "Vijaywada",
+                "Maurai",
+                "Madhya Pradesh",
+                "Bangalore",
+                "Gurgaon",
+                "Bhubaneshwar",
+                "Managlore",
+                "Barelly",
+                "Secundarabad",
+                "Roukela",
+                "Nehru Place",
+                "Deharadun",
+                "Ahemdabad II",
+                "Rohatak",
+                "Ahemdabad",
+                "Pujurgutta",
+                "Orissa",
+                "Chattisgarh",
+                "Gujarat",
+                "Dellhi",
+                "Maharashtra",
+                "Goa",
+                "Odisha",
+                "West Bengal",
+                "Pundcherry",
+                "Tiruchirapally",
+                "Shilong",
+                "Karnataka",
+                "Rajamundry",
+                "Hissar",
+                "Gorakhapur",
+                "Jodhapur"
+            ],
+            "modules_subscribed": [
+                "Challans Management",
+                "License Management",
+                "Audit",
+                "Registers and Records",
+                "Returns Management",
+                "Advisory and Research",
+                "Notice and Inspection"
+            ]
+        }
+      '''
+    }
+  }
+}

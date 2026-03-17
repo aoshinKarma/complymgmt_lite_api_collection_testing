@@ -1,0 +1,26 @@
+meta {
+  name: GET_ALL_NOTIFICATION_TEMPLATE
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/notification/notification_template/view/multiple
+  body: text
+  auth: none
+}
+
+body:text {
+  {
+  	"NotificationName":"Abcd edfr", 
+      "SendAt":"28th sept",         
+      "SendIt":"30th sept",
+      "SendTo":"aoshin@karma.com",
+      "CC_To":"rupa@karma.com",
+      "Created_By":"68b53007136f69ee1841d681"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

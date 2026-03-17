@@ -1,0 +1,21 @@
+meta {
+  name: EMAIL_VERIFICATION
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/password/update/email_request
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "Email":"aoshin@karmamgmt.com"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

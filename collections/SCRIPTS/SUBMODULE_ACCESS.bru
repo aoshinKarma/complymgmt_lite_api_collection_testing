@@ -1,0 +1,19 @@
+meta {
+  name: SUBMODULE_ACCESS
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/client_master/user_accesses/submodule/create
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+settings {
+  encodeUrl: true
+}

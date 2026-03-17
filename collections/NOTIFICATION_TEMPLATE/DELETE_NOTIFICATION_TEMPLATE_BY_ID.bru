@@ -1,0 +1,26 @@
+meta {
+  name: DELETE_NOTIFICATION_TEMPLATE_BY_ID
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/notification/notification_template/delete/68cba6918651371cd82435ff
+  body: text
+  auth: none
+}
+
+body:text {
+  {
+  	"NotificationName":"Abcd edfr", 
+      "SendAt":"28th sept",         
+      "SendIt":"30th sept",
+      "SendTo":"aoshin@karma.com",
+      "CC_To":"rupa@karma.com",
+      "Created_By":"68b53007136f69ee1841d681"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

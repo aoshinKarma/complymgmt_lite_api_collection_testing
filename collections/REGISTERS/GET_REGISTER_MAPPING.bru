@@ -1,0 +1,24 @@
+meta {
+  name: GET_REGISTER_MAPPING
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/register_processing/view/mapping/get?register_id=6981c984eb9dd86d8d56e9e3&document_id=DOC001
+  body: none
+  auth: inherit
+}
+
+params:query {
+  register_id: 6981c984eb9dd86d8d56e9e3
+  document_id: DOC001
+}
+
+headers {
+  user_id: 690c8b2d5d1e8835c539fc92
+}
+
+settings {
+  encodeUrl: true
+}

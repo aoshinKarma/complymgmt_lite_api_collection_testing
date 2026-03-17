@@ -1,0 +1,15 @@
+meta {
+  name: GET_PAYROLLS_CLOSED_ON_OR_AHEAD_OF_SLA_PERCENT
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/payroll/closed/ahead/sla/percent
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

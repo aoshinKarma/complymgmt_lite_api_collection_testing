@@ -1,0 +1,22 @@
+meta {
+  name: UPDATE_COMPANY_STATUS_BY_ID
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/company/update/status/689b03ee9c00b398b71d637e
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "IsActive":true
+      
+  }
+}
+
+settings {
+  encodeUrl: true
+}

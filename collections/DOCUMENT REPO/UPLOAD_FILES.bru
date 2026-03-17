@@ -1,0 +1,19 @@
+meta {
+  name: UPLOAD_FILES
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PROTO}}192.168.1.50:{{PORT}}/api/{{VERSION}}/document_repository/create/file
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  files: @file(/home/siddhant/Downloads/HDFC Nandurbar Location New S&E Registration Certificate.pdf)
+}
+
+settings {
+  encodeUrl: true
+}

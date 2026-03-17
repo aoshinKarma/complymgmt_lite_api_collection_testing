@@ -1,0 +1,52 @@
+meta {
+  name: UPDATE_FILE
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/document_repository/update/file/DOC001
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "_id":  "68c92df8ee2e82f99de0607f",
+    "document_id": "DOC001",
+    "file_name": "Client Onboarding sheet Consolidated A&C  consultancy outsourcing.xlsx",
+    "file_path": "document_repository/Client Onboarding sheet Consolidated A&C  consultancy outsourcing.xlsx",
+    "module_id": "",
+    "module_name": "",
+    "sub_module_id": "",
+    "sub_module_name": "",
+    "company_id": "",
+    "company_name": "",
+    "location_id": "",
+    "location_name": "",
+    "group_holdings_id": "",
+    "group_name": "",
+    "service_tracker_id": "",
+    "service_tracker_name": "",
+    "document_type_id": "",
+    "document_type_name": "",
+    "stage_id": "",
+    "stage_name": "",
+    "is_archived": false,
+    "is_active": true,
+    "is_deleted": false,
+    "created_by":"68bfcec7a46746af32958fd1",
+    "created_at": "2025-09-16 09:29:28",
+    "updated_by":"68bfcec7a46746af32958fd1",
+    "updated_at": "2025-09-16 09:29:28",
+    "deleted_by": "000000000000000000000000",
+    "deleted_at": "",
+    "approval_status": 1,
+    "approved_by": "000000000000000000000000",
+    "approved_at": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+}

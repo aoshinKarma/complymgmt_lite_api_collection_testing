@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "HELPDESK_DASHBOARD",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

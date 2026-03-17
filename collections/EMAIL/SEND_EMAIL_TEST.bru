@@ -1,0 +1,28 @@
+meta {
+  name: SEND_EMAIL_TEST
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://api.complymgmt.ai/api/v1/test/notification/email/send
+  body: json
+  auth: none
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+body:json {
+  {
+      "subject": "TESTING",
+      "body": "This is a test body\n",
+      "to": ["siddhant@karmamgmt.com"],
+      "cc": ["siddhant@karmamgmt.com"]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

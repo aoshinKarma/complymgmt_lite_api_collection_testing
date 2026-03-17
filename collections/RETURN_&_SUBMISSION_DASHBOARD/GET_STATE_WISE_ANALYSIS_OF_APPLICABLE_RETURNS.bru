@@ -1,0 +1,15 @@
+meta {
+  name: GET_STATE_WISE_ANALYSIS_OF_APPLICABLE_RETURNS
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/returns/state/applicable
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

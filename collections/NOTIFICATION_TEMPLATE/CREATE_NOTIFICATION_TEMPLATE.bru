@@ -1,0 +1,29 @@
+meta {
+  name: CREATE_NOTIFICATION_TEMPLATE
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/notification/notification_template/create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "template_name": " TEST ABC",
+      "template_body": "test",
+      "template_subject": "subject",
+      "template_priority": "HIGH",
+      "template_priority_color":"red",
+      "template_type": "WARNING",
+      "template_type_color":"red",
+      "in_app": false,
+      "email": true
+  }
+}
+
+settings {
+  encodeUrl: true
+}

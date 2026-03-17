@@ -1,0 +1,15 @@
+meta {
+  name: APPROVE ALL BY ENTITY TYPE
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/payroll/update/approve/all
+  body: text
+  auth: none
+}
+
+settings {
+  encodeUrl: true
+}

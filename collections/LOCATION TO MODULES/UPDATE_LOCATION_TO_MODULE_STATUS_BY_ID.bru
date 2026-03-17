@@ -1,0 +1,21 @@
+meta {
+  name: UPDATE_LOCATION_TO_MODULE_STATUS_BY_ID
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/module_by_location/update/status/6892eda663e523485d0acfcb
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "IsActive":false
+  }
+}
+
+settings {
+  encodeUrl: true
+}

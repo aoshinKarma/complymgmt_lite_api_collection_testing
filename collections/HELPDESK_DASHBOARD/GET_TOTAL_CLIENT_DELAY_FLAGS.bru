@@ -1,0 +1,15 @@
+meta {
+  name: GET_TOTAL_CLIENT_DELAY_FLAGS
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/helpdesk/client/delay/flag
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,29 @@
+meta {
+  name: CREATE_COMPANY_LOCATION
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/company_location/create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "GroupHoldingsID": "68d4f0bd2aa61219027785da",
+      "CompanyID": "68d4f0d82aa61219027785dc",
+      "LocationName": "Powaiii",
+      "LocationDescription": "aosh test address",
+      "City": "Mumbai",
+      "State": "Maharashtra",
+      "CommonAttributes":{
+          "Created_By": "689b036a9c00b398b71d636e"
+      }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

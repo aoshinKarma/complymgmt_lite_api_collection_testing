@@ -1,0 +1,15 @@
+meta {
+  name: GET_COMPANY_BY_ID
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/company/view/id/6899b45d1c24102ec19bb653
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

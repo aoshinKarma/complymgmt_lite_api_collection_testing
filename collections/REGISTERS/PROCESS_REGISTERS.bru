@@ -1,0 +1,267 @@
+meta {
+  name: PROCESS_REGISTERS
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/register_processing/create/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "src_file_path": "document_repository",
+      "src_file_name": "Example.xlsx",
+      "mappings": [
+          {
+              "target": "Sl No",
+              "source": [
+                  "Sr.No."
+              ],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Emp Code",
+              "source": [
+                  "Ecode"
+              ],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Full Name of employee",
+              "source": [
+                  "Employee Name"
+              ],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Minimum Rates of wages payable",
+              "source": [],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Actual Rates of wages payable",
+              "source": [],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Total production in case of piece rate",
+              "source": [],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Total overtime hours worked",
+              "source": [
+                  "ExtraDays"
+              ],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Basic",
+              "source": [
+                  "Basic"
+              ],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Rate of H.R.A.",
+              "source": [],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "H.R.A. Payable",
+              "source": [
+                  "H.R.A."
+              ],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "CONVEYANCE",
+              "source": [],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "CCA",
+              "source": [],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "MEDICAL",
+              "source": [],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "EDU.ALLOWANCE",
+              "source": [],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "ADV STATUTORY BONUS",
+              "source": [],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Incentive",
+              "source": [
+                  "performance Linked Incentive"
+              ],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Other Allowance",
+              "source": [
+                  "L.T.A.",
+                  "Special Allowance",
+                  "Meal Cards",
+                  "Leave Encashment",
+                  "Driver Salary",
+                  "Fuel Reimbursement"
+              ],
+              "transform": "sum",
+              "default": "0"
+          },
+          {
+              "target": "Arrears",
+              "source": [],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Gross Wages Payable",
+              "source": [
+                  "Gross PM"
+              ],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "PF",
+              "source": [
+                  "PF"
+              ],
+              "transform": "",
+              "default": "0"
+          },
+          {
+              "target": "ESI",
+              "source": [
+                  "ESIC"
+              ],
+              "transform": "",
+              "default": "0"
+          },
+          {
+              "target": "PT",
+              "source": [
+                  "PT"
+              ],
+              "transform": "",
+              "default": "0"
+          },
+          {
+              "target": "IT",
+              "source": [
+                  "TDS"
+              ],
+              "transform": "",
+              "default": "0"
+          },
+          {
+              "target": "LOAN",
+              "source": [
+                  "Loan"
+              ],
+              "transform": "",
+              "default": "0"
+          },
+          {
+              "target": "OTHER DEDUCTION",
+              "source": [
+                  "Meal Card Deduction"
+              ],
+              "transform": "",
+              "default": "0"
+          },
+          {
+              "target": "Total Deductions",
+              "source": [
+                  "TOTAL DEDUCTIONS"
+              ],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Net Wages Paid",
+              "source": [
+                  "NET SALARY"
+              ],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Previous leave Balance",
+              "source": [],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Earned leave during the month",
+              "source": [],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Availed leave during the month",
+              "source": [],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Balance leave at end of month",
+              "source": [],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Date of payment of wages",
+              "source": [],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "PF Account",
+              "source": [],
+              "transform": "",
+              "default": ""
+          },
+          {
+              "target": "Signature or thumb impression of the employees",
+              "source": [],
+              "transform": "",
+              "default": ""
+          }
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

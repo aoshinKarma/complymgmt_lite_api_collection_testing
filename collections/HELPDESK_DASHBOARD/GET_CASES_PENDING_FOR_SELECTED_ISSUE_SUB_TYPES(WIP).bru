@@ -1,0 +1,15 @@
+meta {
+  name: GET_CASES_PENDING_FOR_SELECTED_ISSUE_SUB_TYPES(WIP)
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/helpdesk/pending/issue/types
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,23 @@
+meta {
+  name: DOWNLOAD FILE
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/document_repository/view/download?document_id=DOC001
+  body: none
+  auth: inherit
+}
+
+params:query {
+  document_id: DOC001
+}
+
+headers {
+  user_id: 690c8b2d5d1e8835c539fc92
+}
+
+settings {
+  encodeUrl: true
+}

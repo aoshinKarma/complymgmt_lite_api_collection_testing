@@ -1,0 +1,19 @@
+meta {
+  name: SERVICE_TRACKER_DATA_ACCESS
+  type: http
+  seq: 15
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/client_master/service_tracker_access
+  body: none
+  auth: inherit
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+settings {
+  encodeUrl: true
+}

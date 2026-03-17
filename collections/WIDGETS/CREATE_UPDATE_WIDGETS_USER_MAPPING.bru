@@ -1,0 +1,97 @@
+meta {
+  name: CREATE_UPDATE_WIDGETS_USER_MAPPING
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/widget-mapping/create?user_id=690c8b2d5d1e8835c539fc92
+  body: json
+  auth: inherit
+}
+
+params:query {
+  user_id: 690c8b2d5d1e8835c539fc92
+}
+
+body:json {
+  {
+      "user_id": "6930371be17d5e8a6d884b54",
+      "widget_ids": [
+          "CC-1", 
+   "CC-2", 
+   "CC-3", 
+   "CC-4", 
+   "CC-5", 
+   "CC-6", 
+   "CC-7", 
+   "CC-8",
+   "CC-9",
+  
+   "CCBC-1", 
+   "CCBC-2",
+   "CCBC-3", 
+   "CCBC-4",
+   "CCBC-5",
+   "CCBC-6", 
+   "CCBC-7", 
+   "CCBC-8", 
+   "CCBC-9", 
+  
+   "GC-1", 
+   "GC-2",
+   "GC-3", 
+   "GC-4", 
+  
+   "NI-1",  
+   "NI-2",  
+   "NI-3", 
+   "NI-4", 
+   "NI-5", 
+   "NI-6",
+   "NI-7",
+   "NI-8",   
+  
+   "GH-1",
+    "GH-2",
+   "GH-3",
+   "GH-4",
+  
+   "AV-1",
+   "AV-2",
+   "AV-3", 
+   "AV-4",
+   "AV-5",
+   "AV-6",
+   "AV-7",
+   "AV-8", 
+  
+   "HE-1", 
+   "HE-2", 
+   "HE-3", 
+   "HE-4",  
+   "HE-5", 
+   "HE-6",  
+   "HE-7",  
+  
+   "RS-1",
+   "RS-2", 
+   "RS-3",
+   "RS-4", 
+   "RS-5",
+   "RS-6",
+   "RS-7",
+  
+   "PS-1", 
+   "PS-2",
+   "PS-3",
+   "PS-4",
+   "PS-5", 
+   "PS-6"
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

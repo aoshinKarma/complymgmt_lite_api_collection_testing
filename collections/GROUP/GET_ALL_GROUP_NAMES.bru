@@ -1,0 +1,15 @@
+meta {
+  name: GET_ALL_GROUP_NAMES
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/group/view/names/multiple
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

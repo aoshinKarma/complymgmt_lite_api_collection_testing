@@ -1,0 +1,19 @@
+meta {
+  name: PAGE_ACCESS
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/client_master/user_accesses/page/create
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,25 @@
+meta {
+  name: UPDATE_GROUP_BY_ID
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/group/update/68998b822b7a91de9ac0aa99
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "GroupName": "ongc",
+      "GroupDescription": "Oil and Natural Gas Corporation",
+      "CommonAttributes":{
+      "Updated_By": "689623663511438da6a85db8"
+    }
+    }
+}
+
+settings {
+  encodeUrl: true
+}

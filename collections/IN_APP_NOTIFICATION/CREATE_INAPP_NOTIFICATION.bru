@@ -1,0 +1,15 @@
+meta {
+  name: CREATE_INAPP_NOTIFICATION
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/cron/send/inapp
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

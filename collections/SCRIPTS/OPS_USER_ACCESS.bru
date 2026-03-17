@@ -1,0 +1,23 @@
+meta {
+  name: OPS_USER_ACCESS
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/client_master/user_accesses/ops/create
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+body:multipart-form {
+  file: @file(/home/siddhant/Documents/Ops team user access.xlsx)
+}
+
+settings {
+  encodeUrl: true
+}

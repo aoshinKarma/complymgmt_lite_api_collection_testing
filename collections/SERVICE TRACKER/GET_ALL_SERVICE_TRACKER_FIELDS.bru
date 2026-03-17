@@ -1,0 +1,15 @@
+meta {
+  name: GET_ALL_SERVICE_TRACKER_FIELDS
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/service_tracker/view/helpdesk_tracker/fields
+  body: none
+  auth: none
+}
+
+settings {
+  encodeUrl: true
+}

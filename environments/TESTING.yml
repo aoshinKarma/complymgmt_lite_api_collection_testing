@@ -1,0 +1,12 @@
+name: TESTING
+variables:
+  - name: PROTO
+    value: http://
+  - name: HOST
+    value: 192.168.1.225
+  - name: PORT
+    value: "9000"
+  - name: VERSION
+    value: v1
+  - name: authToken
+    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzI2OTcyMTIsImlhdCI6MTc3MjYxMDgxMiwidXNlcl9pZCI6IjY5MGM4YjJkNWQxZTg4MzVjNTM5ZmM5MiJ9.t2EUym-iZIe8DA9sSJFielY9KtsGVwi1hi54jcl3xeQ

@@ -1,0 +1,15 @@
+meta {
+  name: GET_ALL_NOTIFICATIONS
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/notification/view/multiple
+  body: none
+  auth: none
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,37 @@
+meta {
+  name: UPDATE_NOTIFICATION_STATUS_BY_ID
+  type: http
+  seq: 10
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/notification/update/status/68ccf8770ec34ae3fc25ece0
+  body: text
+  auth: none
+}
+
+body:text {
+  {
+  	"GroupHoldingsID"  :"68b53fa5434a8fae052be5b3",
+  	"GroupName"      :"ADITYA BIRLA",
+  	"CompanyID"        :"68b54af4b11e842072a11127",
+  	"CompanyName"      :"Hindalco Industries",
+  	"LocationID"       :"68b54c672c899d8fb425afd1",
+  	"LocationName"     :"Powai",
+  	"TemplateID"       :"1234567888889",
+  	"TemplateName"   : "Abcd edfr",  
+  	"SentTimestamp":"28th sept",    
+  	"SentStatus":"in progress",       
+  	"SendOn"  :"30th sept",         
+      "SendTo":["aoshin@karma.com"],
+      "CC":["rupa@karma.com"],
+  	"Priority":"medium",   
+      "Created_By":"68b53007136f69ee1841d681"
+  }
+        
+  
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,25 @@
+meta {
+  name: UPLOAD_EXCEL
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/v1/tracker/upload_tracker/excel
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+body:multipart-form {
+  file: @file()
+  bo_user_id: 690c8b2d5d1e8835c539fc92
+  tracker_name: Document Dropdown
+}
+
+settings {
+  encodeUrl: true
+}

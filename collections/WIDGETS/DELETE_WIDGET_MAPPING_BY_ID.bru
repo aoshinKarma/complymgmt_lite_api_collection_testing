@@ -1,0 +1,20 @@
+meta {
+  name: DELETE_WIDGET_MAPPING_BY_ID
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/widget-mapping/delete?user_id=693acd246ec02fe8052ac3e6&target_user_id=69302f45e17d5e8a6d884b52
+  body: none
+  auth: inherit
+}
+
+params:query {
+  user_id: 693acd246ec02fe8052ac3e6
+  target_user_id: 69302f45e17d5e8a6d884b52
+}
+
+settings {
+  encodeUrl: true
+}

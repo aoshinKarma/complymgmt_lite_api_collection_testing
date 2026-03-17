@@ -1,0 +1,15 @@
+meta {
+  name: GET_INVESTMENT_DECLARATION_STATUS_BY_COMPANY
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/payroll/investment/declaration/status
+  body: none
+  auth: none
+}
+
+settings {
+  encodeUrl: true
+}

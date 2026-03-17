@@ -1,0 +1,23 @@
+meta {
+  name: USERS
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/client_master/users/create
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+body:multipart-form {
+  file: @file(/home/siddhant/Documents/user_list.xlsx)
+}
+
+settings {
+  encodeUrl: true
+}

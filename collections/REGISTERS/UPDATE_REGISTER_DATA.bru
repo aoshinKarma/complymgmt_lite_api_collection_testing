@@ -1,0 +1,54 @@
+meta {
+  name: UPDATE_REGISTER_DATA
+  type: http
+  seq: 9
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/register/update/id/698493f30af6be2ed6e6ec5d
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "register_name": "cum-Wages Register Part-I",
+    "register_column_name": [
+      "Sl No",
+      "Emp Code",
+      "Full Name of employee",
+      "Minimum Rates of wages payable",
+      "Actual Rates of wages payable",
+      "Total production in case of piece rate",
+      "Total overtime hours worked",
+      "Basic",
+      "Rate of H.R.A.",
+      "H.R.A. Payable",
+      "CONVEYANCE",
+      "CCA",
+      "MEDICAL",
+      "EDU.ALLOWANCE",
+      "ADV STATUTORY BONUS",
+      "Incentive",
+      "Other Allowance",
+      "Arrears",
+      "Gross Wages Payable",
+      "PF",
+      "ESI",
+      "PT",
+      "IT",
+      "LOAN",
+      "OTHER DEDUCTION",
+      "Availed leave during the month",
+      "Balance leave at end of month",
+      "Date of payment of wages",
+      "PF Account",
+      "Signature or thumb impression of the employees"
+    ]
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

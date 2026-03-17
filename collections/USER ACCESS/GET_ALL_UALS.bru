@@ -1,0 +1,19 @@
+meta {
+  name: GET_ALL_UALS
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/user_access/view/user_id/69302f45e17d5e8a6d884b52
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {}
+}
+
+settings {
+  encodeUrl: true
+}

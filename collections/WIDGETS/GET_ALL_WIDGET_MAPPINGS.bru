@@ -1,0 +1,19 @@
+meta {
+  name: GET_ALL_WIDGET_MAPPINGS
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/widget-mapping/get/multiple?user_id=690c8b2d5d1e8835c539fc92
+  body: none
+  auth: inherit
+}
+
+params:query {
+  user_id: 690c8b2d5d1e8835c539fc92
+}
+
+settings {
+  encodeUrl: true
+}

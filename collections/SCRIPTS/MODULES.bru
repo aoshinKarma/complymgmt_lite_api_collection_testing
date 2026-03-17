@@ -1,0 +1,23 @@
+meta {
+  name: MODULES
+  type: http
+  seq: 10
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/client_master/modules/create
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+body:multipart-form {
+  file: @file(/home/siddhant/Documents/module.xlsx)
+}
+
+settings {
+  encodeUrl: true
+}

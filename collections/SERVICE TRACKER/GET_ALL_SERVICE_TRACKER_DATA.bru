@@ -1,0 +1,19 @@
+meta {
+  name: GET_ALL_SERVICE_TRACKER_DATA
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/service_tracker/view/returns/data
+  body: json
+  auth: none
+}
+
+params:query {
+  ~sheet: Sheet1
+}
+
+settings {
+  encodeUrl: true
+}

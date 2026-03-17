@@ -1,0 +1,15 @@
+meta {
+  name: GET_USER_BY_ID
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/user/view/690c8cb65d1e8835c539fce2
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

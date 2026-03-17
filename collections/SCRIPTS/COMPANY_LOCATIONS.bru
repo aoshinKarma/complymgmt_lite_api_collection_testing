@@ -1,0 +1,19 @@
+meta {
+  name: COMPANY_LOCATIONS
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/client_master/company_locations/create
+  body: none
+  auth: inherit
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+settings {
+  encodeUrl: true
+}

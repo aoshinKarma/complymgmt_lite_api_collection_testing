@@ -1,0 +1,27 @@
+meta {
+  name: CREATE_GROUP
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/group/create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "GroupName": "Burger king",
+      "GroupDescription": "Burger king",
+      "CommonAttributes":{
+          "Created_By": "68bfcec7a46746af32958fd1"
+      }
+  }
+  
+  
+}
+
+settings {
+  encodeUrl: true
+}

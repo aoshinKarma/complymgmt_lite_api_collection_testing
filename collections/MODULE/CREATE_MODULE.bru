@@ -1,0 +1,25 @@
+meta {
+  name: CREATE_MODULE
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/module/create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+  	"ModuleName":  "Test AB",
+  	"ModuleDescription": "test",
+     "CommonAttributes":{
+      "Created_By": "689623663511438da6a85db8"
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

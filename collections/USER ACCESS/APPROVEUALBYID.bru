@@ -1,0 +1,21 @@
+meta {
+  name: APPROVEUALBYID
+  type: http
+  seq: 12
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/ual/approve/6881fc0eb3691191462f9c5d
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "bo_user_id": "6881fc0eb3691191462f9c5d"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,20 @@
+meta {
+  name: TOGGLE STATUS USER ACCESS
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/v1/user_access/update/status/toggle/6895a108ecf7f2b41f6affde
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {}
+  
+}
+
+settings {
+  encodeUrl: true
+}

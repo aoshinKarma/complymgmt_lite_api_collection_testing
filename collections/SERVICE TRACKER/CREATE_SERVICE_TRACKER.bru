@@ -1,0 +1,27 @@
+meta {
+  name: CREATE_SERVICE_TRACKER
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/service_tracker/create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+  	"ServiceTrackerName"        :"POSH Tracker",
+  	"ServiceTrackerDescription" :"This is test tracker",
+  	"SubModuleID"               :"68970bf4ff1628602612f097",
+      "ModuleID"                  :"6897094bff1628602612f095",
+  	 "CommonAttributes": {
+        "Created_By": "688331c4d3f5ece9a3ad0065"
+      }
+    }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,15 @@
+meta {
+  name: GET_DOCUMENT_DROPDOWNS_STAGE
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/document_repository/view/dropdowns/stage/onboarding_tracker
+  body: none
+  auth: none
+}
+
+settings {
+  encodeUrl: true
+}

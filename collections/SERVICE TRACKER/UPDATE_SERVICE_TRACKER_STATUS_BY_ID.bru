@@ -1,0 +1,19 @@
+meta {
+  name: UPDATE_SERVICE_TRACKER_STATUS_BY_ID
+  type: http
+  seq: 10
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/service_tracker/update/status/68a6b2ee80589b44b7c2533f
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+settings {
+  encodeUrl: true
+}

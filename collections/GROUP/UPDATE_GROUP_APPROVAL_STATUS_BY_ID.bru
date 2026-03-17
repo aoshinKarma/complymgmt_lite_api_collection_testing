@@ -1,0 +1,19 @@
+meta {
+  name: UPDATE_GROUP_APPROVAL_STATUS_BY_ID
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/group/update/approval_status/68d4f0bd2aa61219027785da
+  body: none
+  auth: inherit
+}
+
+headers {
+  ~Authorization: 
+}
+
+settings {
+  encodeUrl: true
+}

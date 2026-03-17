@@ -1,0 +1,23 @@
+meta {
+  name: KAO_LEADER_ACCESS
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/client_master/user_accesses/kao_leader/create
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+body:multipart-form {
+  file: @file(/home/siddhant/Documents/KAO user access list.xlsx)
+}
+
+settings {
+  encodeUrl: true
+}

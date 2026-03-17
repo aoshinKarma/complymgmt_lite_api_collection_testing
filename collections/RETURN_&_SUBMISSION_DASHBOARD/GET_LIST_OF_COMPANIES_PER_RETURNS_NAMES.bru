@@ -1,0 +1,15 @@
+meta {
+  name: GET_LIST_OF_COMPANIES_PER_RETURNS_NAMES
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/returns/company/per/returns
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

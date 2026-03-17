@@ -1,0 +1,15 @@
+meta {
+  name: GET_TICKETS_DISTRIBUTION_ASSIGNED_TO_COUNT
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/helpdesk/tickets/distribution
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

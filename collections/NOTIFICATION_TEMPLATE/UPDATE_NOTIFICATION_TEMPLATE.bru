@@ -1,0 +1,29 @@
+meta {
+  name: UPDATE_NOTIFICATION_TEMPLATE
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/notification/notification_template/update/68cba6918651371cd82435ff
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "template_name": "ABC",
+      "template_body": "test",
+      "template_subject": "subject",
+      "template_priority": "LOW",
+      "template_priority_color":"blue",
+      "template_type": "INFO",
+      "template_type_color":"blue",
+      "in_app": true,
+      "email": true
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,19 @@
+meta {
+  name: BULK APPROVE ALL SERVICE TRACKER DATA
+  type: http
+  seq: 13
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/service_tracker/update/approve/bulk/license_tracker/data
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {}
+}
+
+settings {
+  encodeUrl: true
+}

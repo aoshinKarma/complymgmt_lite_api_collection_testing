@@ -1,0 +1,26 @@
+meta {
+  name: UPDATE_SUB_MODULE_BY_ID
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/submodule/update/68b56c4b5cfe4ef09fae4687
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "SubModuleName": "esi",
+      "SubModuleDescription": "API mapping, SLA alerts,",
+      "ModuleID":"68b55086e62e9feaee703ec6",
+      "CommonAttributes": {
+        "Updated_By": "68b53f2e434a8fae052be5af"
+      }
+    }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,19 @@
+meta {
+  name: GET_ WIDGETS_BY_USER_ID
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/widget-mapping/get?user_id=693acd246ec02fe8052ac3e6
+  body: none
+  auth: inherit
+}
+
+params:query {
+  user_id: 693acd246ec02fe8052ac3e6
+}
+
+settings {
+  encodeUrl: true
+}

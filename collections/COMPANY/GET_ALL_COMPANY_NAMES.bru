@@ -1,0 +1,15 @@
+meta {
+  name: GET_ALL_COMPANY_NAMES
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/company/view/names/multiple
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,27 @@
+meta {
+  name: UPDATE_LOCATION_TO_MODULES_BY_ID
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/location_to_module/update/699408dd1193830c17fb0826
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "CompanyID": "69258696852e6884cebef447",
+      "LocationID":"6965f20da2567b71d0fb1fc5",
+  	"ModuleID":"698c750905bd9ecfbdb57860",
+  	"SubmoduleID":"698c75254f48057298335e2a",
+      "CommonAttributes": {
+        "Created_By": "690c8b2d5d1e8835c539fc92"
+      }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

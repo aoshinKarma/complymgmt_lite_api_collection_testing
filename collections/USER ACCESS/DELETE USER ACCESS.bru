@@ -1,0 +1,19 @@
+meta {
+  name: DELETE USER ACCESS
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/v1/user_access/delete/6895a108ecf7f2b41f6affde
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {}
+}
+
+settings {
+  encodeUrl: true
+}

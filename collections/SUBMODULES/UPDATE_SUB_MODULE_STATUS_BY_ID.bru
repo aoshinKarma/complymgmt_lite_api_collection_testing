@@ -1,0 +1,21 @@
+meta {
+  name: UPDATE_SUB_MODULE_STATUS_BY_ID
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/submodule/update/status/68970bf4ff1628602612f097
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "IsActive":false
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,34 @@
+meta {
+  name: CREATE_SERVICE_TRACKER_SPECIFICS
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/service_tracker/create/specifics
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+  	"service_tracker_id": "6883604a8b2a82a0311edd73",
+      "external_access": [
+          "gender",
+          "created_at",
+          "approved_by",
+          "age",
+          "date",
+          "last_name",
+          "_id",
+          "deleted_at",
+          "first_name",
+          "no",
+          "id"
+      ]
+    }
+}
+
+settings {
+  encodeUrl: true
+}

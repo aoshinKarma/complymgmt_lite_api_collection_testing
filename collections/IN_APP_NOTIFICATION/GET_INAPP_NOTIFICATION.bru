@@ -1,0 +1,19 @@
+meta {
+  name: GET_INAPP_NOTIFICATION
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/in_app/view/inapp_notification_by_userID?user_id=68da395655654bb4d552d7dd
+  body: none
+  auth: inherit
+}
+
+params:query {
+  user_id: 68da395655654bb4d552d7dd
+}
+
+settings {
+  encodeUrl: true
+}

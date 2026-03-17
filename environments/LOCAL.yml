@@ -1,0 +1,10 @@
+name: LOCAL
+variables:
+  - name: PROTO
+    value: http://
+  - name: HOST
+    value: 127.0.0.1
+  - name: PORT
+    value: "9000"
+  - name: VERSION
+    value: v1

@@ -1,0 +1,19 @@
+meta {
+  name: LINK_LOCATION_MODULE
+  type: http
+  seq: 14
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/client_master/link/location/module
+  body: none
+  auth: inherit
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+settings {
+  encodeUrl: true
+}

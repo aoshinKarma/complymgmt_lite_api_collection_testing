@@ -1,0 +1,15 @@
+meta {
+  name: GET_REMARKS_BASED_ON_COMPANY
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/returns/remarks/based/company
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

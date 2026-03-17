@@ -1,0 +1,27 @@
+meta {
+  name: CREATE_LOCATION_TO_MODULES
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/location_to_module/create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "CompanyID": "69258696852e6884cebef447",
+      "LocationID":"6965f20da2567b71d0fb1fc5",
+  	"ModuleID":"690c8c4e5d1e8835c539fca9",
+  	"SubmoduleID":"690c8c4e5d1e8835c539fcad",
+      "CommonAttributes": {
+        "Created_By": "690c8b2d5d1e8835c539fc92"
+      }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,15 @@
+meta {
+  name: GET_ALL_SUB_MODULE
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/submodule/view/multiple
+  body: none
+  auth: none
+}
+
+settings {
+  encodeUrl: true
+}

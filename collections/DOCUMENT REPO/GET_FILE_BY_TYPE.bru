@@ -1,0 +1,19 @@
+meta {
+  name: GET_FILE_BY_TYPE
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/document_repository/view/files/type?file_type=xlsx
+  body: none
+  auth: inherit
+}
+
+params:query {
+  file_type: xlsx
+}
+
+settings {
+  encodeUrl: true
+}

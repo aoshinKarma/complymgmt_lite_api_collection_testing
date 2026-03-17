@@ -1,0 +1,14 @@
+meta {
+  name: LOCATION TO MODULES
+}
+
+auth {
+  mode: none
+}
+
+script:pre-request {
+  req.getHeaders().add({
+      key: "Authorization",
+      value: bru.getGlobalEnvVar("authToken")
+  });
+}

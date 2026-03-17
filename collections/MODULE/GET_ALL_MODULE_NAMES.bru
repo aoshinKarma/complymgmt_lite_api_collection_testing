@@ -1,0 +1,15 @@
+meta {
+  name: GET_ALL_MODULE_NAMES
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/module/view/names/multiple
+  body: none
+  auth: none
+}
+
+settings {
+  encodeUrl: true
+}

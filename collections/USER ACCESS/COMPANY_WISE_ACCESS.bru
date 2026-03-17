@@ -1,0 +1,31 @@
+meta {
+  name: COMPANY_WISE_ACCESS
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/v1/user_access/create/company-wise/access
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "company_name": "Kids Clinic India Limited",
+    "access_key": ["View"],
+    "user_id": "69302f45e17d5e8a6d884b52"
+  }
+  
+}
+
+script:pre-request {
+  req.getHeaders().add({
+      key: "Authorization",
+      value: bru.getGlobalEnvVar("authToken")
+  });
+}
+
+settings {
+  encodeUrl: true
+}

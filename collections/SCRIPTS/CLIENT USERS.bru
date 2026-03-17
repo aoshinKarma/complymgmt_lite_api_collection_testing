@@ -1,0 +1,23 @@
+meta {
+  name: CLIENT USERS
+  type: http
+  seq: 18
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/external_client/users/create
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+body:multipart-form {
+  file: @file(/C:/Users/kmc714/Downloads/Client SPOC for tracker Outsource.xlsx)
+}
+
+settings {
+  encodeUrl: true
+}

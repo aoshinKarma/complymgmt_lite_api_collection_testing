@@ -1,0 +1,19 @@
+meta {
+  name: DELETE_ALL_INAPP_NOTIFICATION
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/in_app/delete/remove_all_inapp_notification?user_id=68c25e641cd4ac696db88602
+  body: none
+  auth: inherit
+}
+
+params:query {
+  user_id: 68c25e641cd4ac696db88602
+}
+
+settings {
+  encodeUrl: true
+}

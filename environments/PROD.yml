@@ -1,0 +1,10 @@
+name: PROD
+variables:
+  - name: PROTO
+    value: https://
+  - name: HOST
+    value: api.complymgmt.ai
+  - name: PORT
+    value: ""
+  - name: VERSION
+    value: v1

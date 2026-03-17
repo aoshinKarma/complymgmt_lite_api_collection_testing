@@ -1,0 +1,29 @@
+meta {
+  name: UPDATE_COMPANY_LOCATION_BY_ID
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/company_location/update/68967a60024a4be4a8f34774
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "GroupHoldingsID": "68966bf047d460beaee19526",
+      "CompanyID": "68966fd0c352cd7e876fae7e",
+      "LocationName": "Test",
+      "LocationDescription": "testing address",
+      "City": "Mumbai",
+      "State": "Maharashtra",
+      "CommonAttributes":{
+          "Created_By": "689623663511438da6a85db8"
+      }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

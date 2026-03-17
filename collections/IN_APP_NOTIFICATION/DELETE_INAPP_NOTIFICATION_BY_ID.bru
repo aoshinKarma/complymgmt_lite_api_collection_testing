@@ -1,0 +1,15 @@
+meta {
+  name: DELETE_INAPP_NOTIFICATION_BY_ID
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/in_app/delete/remove_inapp_notification/68cbaae3a1c8a82c13cc58f9
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

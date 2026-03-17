@@ -1,0 +1,19 @@
+meta {
+  name: UPLOAD_BULK_NOTIFICATION_BY_TEMPLATE  _ID
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/notification/create/bulk/upload/68bff9e3185394c879c7a9e7
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  file: @file(/C:/Users/kmc714/Downloads/notification template.xlsx)
+}
+
+settings {
+  encodeUrl: true
+}

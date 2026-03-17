@@ -1,0 +1,15 @@
+meta {
+  name: GET_FREQUENCY_WISE_DISTRIBUTION_OF_RETURNS
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/returns/frequency/distribution/returns
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,19 @@
+meta {
+  name: COMPANY_LOCATION_ACCESS
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/client_master/user_accesses/company_locations/create
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+settings {
+  encodeUrl: true
+}

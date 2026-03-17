@@ -1,0 +1,58 @@
+meta {
+  name: VIEW_REGISTER_DATA_BY_ID
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/register/view/id/698494060af6be2ed6e6ec5e
+  body: text
+  auth: none
+}
+
+body:text {
+  {
+    "register_name": "$$Form II Muster-Roll-cum-Wages Register Part-I",
+    "register_column_name": [
+      "Sl No",
+      "Emp Code",
+      "Full Name of employee",
+      "Minimum Rates of wages payable",
+      "Actual Rates of wages payable",
+      "Total production in case of piece rate",
+      "Total overtime hours worked",
+      "Basic",
+      "Rate of H.R.A.",
+      "H.R.A. Payable",
+      "CONVEYANCE",
+      "CCA",
+      "MEDICAL",
+      "EDU.ALLOWANCE",
+      "ADV STATUTORY BONUS",
+      "Incentive",
+      "Other Allowance",
+      "Arrears",
+      "Gross Wages Payable",
+      "PF",
+      "ESI",
+      "PT",
+      "IT",
+      "LOAN",
+      "OTHER DEDUCTION",
+      "Total Deductions",
+      "Net Wages Paid",
+      "Previous leave Balance",
+      "Earned leave during the month",
+      "Availed leave during the month",
+      "Balance leave at end of month",
+      "Date of payment of wages",
+      "PF Account",
+      "Signature or thumb impression of the employees"
+    ]
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

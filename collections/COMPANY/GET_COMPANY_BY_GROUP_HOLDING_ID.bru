@@ -1,0 +1,22 @@
+meta {
+  name: GET_COMPANY_BY_GROUP_HOLDING_ID
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/company/view/group/multiple/68999a5db1730d8874f526ba
+  body: none
+  auth: inherit
+}
+
+script:pre-request {
+  req.getHeaders().add({
+      key: "Authorization",
+      value: bru.getGlobalEnvVar("authToken")
+  });
+}
+
+settings {
+  encodeUrl: true
+}

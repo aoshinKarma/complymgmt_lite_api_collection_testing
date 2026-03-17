@@ -1,0 +1,27 @@
+meta {
+  name: CREATE_USER_ACCESS
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/v1/user_access/create
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "user_id": "68bfcf222895573a6ae2959e",
+    "entity_id": "68bfcec7a46746af32958fc6",
+    "entity_name": "company_location",
+    "entity_type": "page",
+    "bo_user_id": "68bfcec7a46746af32958fd1",
+    "access": ["view", "create", "update"]
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

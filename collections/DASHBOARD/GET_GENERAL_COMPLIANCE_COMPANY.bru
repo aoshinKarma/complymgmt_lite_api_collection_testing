@@ -1,0 +1,73 @@
+meta {
+  name: GET_GENERAL_COMPLIANCE_COMPANY
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/general/compliance/company?company_name=SBI General Insurance Company Limited
+  body: none
+  auth: none
+}
+
+params:query {
+  company_name: SBI General Insurance Company Limited
+}
+
+settings {
+  encodeUrl: true
+}
+
+example {
+  name: GET_GENERAL_COMPLIANCE_COMPANY
+  
+  request: {
+    url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/general/compliance/company?company_name=SBI General Insurance Company Limited
+    method: GET
+    mode: none
+    params:query: {
+      company_name: SBI General Insurance Company Limited
+    }
+  }
+  
+  response: {
+    headers: {
+      Date: Fri, 20 Feb 2026 06:46:50 GMT
+      Content-Type: application/json
+      Content-Length: 401
+      X-Request-Id: a2f23d3a-aa64-459e-a9b9-c93bb1d52349
+      Vary: Origin
+    }
+  
+    status: {
+      code: OK
+      text: 200
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+            "active_licenses": 40,
+            "applicable_registers": 0,
+            "at_risk_returns": 0,
+            "available_registers": 0,
+            "completed_challans": 0,
+            "completed_registers": 0,
+            "completed_returns": 0,
+            "expired_licenses": 2,
+            "expiring_licenses": 0,
+            "inprogress_licenses": 2,
+            "missing_registers": 0,
+            "partial_registers": 0,
+            "pending_challans": 0,
+            "total_challans": 0,
+            "total_licenses": 44,
+            "total_returns": 0,
+            "total_returns_delayed": 0,
+            "total_returns_pending": 0
+        }
+      '''
+    }
+  }
+}

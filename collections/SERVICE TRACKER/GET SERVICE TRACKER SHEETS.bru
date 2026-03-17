@@ -1,0 +1,15 @@
+meta {
+  name: GET SERVICE TRACKER SHEETS
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/service_tracker/view/license_tracker_testing/sheets
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

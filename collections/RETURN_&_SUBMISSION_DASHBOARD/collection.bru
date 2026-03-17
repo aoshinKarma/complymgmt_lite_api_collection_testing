@@ -1,0 +1,14 @@
+meta {
+  name: RETURN_&_SUBMISSION_DASHBOARD
+}
+
+auth {
+  mode: none
+}
+
+script:pre-request {
+  req.getHeaders().add({
+      key: "Authorization",
+      value: bru.getGlobalEnvVar("authToken")
+  });
+}

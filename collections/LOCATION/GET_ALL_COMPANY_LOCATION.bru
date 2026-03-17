@@ -1,0 +1,15 @@
+meta {
+  name: GET_ALL_COMPANY_LOCATION
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/company_location/view/multiple
+  body: none
+  auth: none
+}
+
+settings {
+  encodeUrl: true
+}

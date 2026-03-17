@@ -1,0 +1,15 @@
+meta {
+  name: GET_ALL_ACCESS_TYPES
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/v1/user_access/view/access_types
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

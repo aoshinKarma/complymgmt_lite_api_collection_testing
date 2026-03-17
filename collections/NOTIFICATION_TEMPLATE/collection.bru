@@ -1,0 +1,14 @@
+meta {
+  name: NOTIFICATION_TEMPLATE
+}
+
+auth {
+  mode: none
+}
+
+script:pre-request {
+  req.getHeaders().add({
+      key: "Authorization",
+      value: bru.getGlobalEnvVar("authToken")
+  });
+}

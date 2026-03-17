@@ -1,0 +1,68 @@
+meta {
+  name: GET_COMPLIANCE_COCKPIT_BY_COMPANY
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/compliance/cockpit/company?company_name=Mthree Talent Solutions India Private Limited
+  body: none
+  auth: none
+}
+
+params:query {
+  company_name: Mthree Talent Solutions India Private Limited
+}
+
+settings {
+  encodeUrl: true
+}
+
+example {
+  name: GET_COMPLIANCE_COCKPIT_BY_COMPANY
+  
+  request: {
+    url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/compliance/cockpit/company?company_name=Mthree Talent Solutions India Private Limited
+    method: GET
+    mode: none
+    params:query: {
+      company_name: Mthree Talent Solutions India Private Limited
+    }
+  }
+  
+  response: {
+    headers: {
+      Date: Fri, 20 Feb 2026 06:48:30 GMT
+      Content-Type: application/json
+      Content-Length: 339
+      X-Request-Id: a4f23d3a-aa64-459e-a9b9-c93bb1d52349
+      Vary: Origin
+    }
+  
+    status: {
+      code: OK
+      text: 200
+    }
+  
+    body: {
+      type: json
+      content: '''
+        {
+            "active_licenses": 10,
+            "applicable_registers": 0,
+            "average_compliance_score": 67.17,
+            "challans_compliance_score": 100,
+            "completed_challans": 21,
+            "completed_registers": 0,
+            "completed_returns": 2,
+            "licenses_compliance_score": 83.33,
+            "registers_compliance_score": 0,
+            "returns_compliance_score": 18.18,
+            "total_challans": 21,
+            "total_licenses": 12,
+            "total_returns": 11
+        }
+      '''
+    }
+  }
+}

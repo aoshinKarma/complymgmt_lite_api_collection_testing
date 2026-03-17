@@ -1,0 +1,27 @@
+meta {
+  name: UPDATE_COMPANY_BY_ID
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/company/update/68a6ae31f240c683bc15eb28
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "CompanyName": "Jio test",
+      "CompanyCommonName": "test",
+      "CompanyDescription": "test",
+      "GroupHoldingsID": "68a6adb6f240c683bc15eb24",
+      "CommonAttributes":{
+          "Updated_By": "68a6abd2f240c683bc15eb1a"
+      }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

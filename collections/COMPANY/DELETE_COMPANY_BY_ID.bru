@@ -1,0 +1,15 @@
+meta {
+  name: DELETE_COMPANY_BY_ID
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/company/delete/68d155af8882c27168f832aa
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

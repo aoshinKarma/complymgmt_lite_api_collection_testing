@@ -1,0 +1,19 @@
+meta {
+  name: GET USER ACCESS BY USERID
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/v1/user_access/view/user_id/68aeb121f8c204ec3cec4fdb
+  body: json
+  auth: none
+}
+
+body:json {
+  {}
+}
+
+settings {
+  encodeUrl: true
+}

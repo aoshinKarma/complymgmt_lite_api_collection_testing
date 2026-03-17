@@ -1,0 +1,15 @@
+meta {
+  name: GET_SERVICE_TRACKER_NAMES
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/service_tracker/view/names/multiple
+  body: none
+  auth: none
+}
+
+settings {
+  encodeUrl: true
+}

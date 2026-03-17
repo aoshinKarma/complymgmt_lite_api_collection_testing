@@ -1,0 +1,15 @@
+meta {
+  name: GET_COMPLIANCE_RISK_DITRIBUTION_BY_STATE
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/returns/compliance/risk/ditribution/state
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

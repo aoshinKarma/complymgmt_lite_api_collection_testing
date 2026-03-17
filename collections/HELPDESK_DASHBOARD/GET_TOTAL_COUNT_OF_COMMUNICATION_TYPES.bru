@@ -1,0 +1,15 @@
+meta {
+  name: GET_TOTAL_COUNT_OF_COMMUNICATION_TYPES
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/helpdesk/communication/type
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

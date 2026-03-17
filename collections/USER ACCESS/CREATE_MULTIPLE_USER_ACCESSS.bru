@@ -1,0 +1,27 @@
+meta {
+  name: CREATE_MULTIPLE_USER_ACCESSS
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/v1/user_access/create
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "user_id": "64c2f2349ab6d8a8d9bfa2a3",
+    "entity_id": "6889eaecf993c8d09da5ddc2",
+    "entity_name": "company",
+    "entity_type": "page",
+    "bo_user_id": "64c2f2349ab6d8a8d9bfa2a3",
+    "access": ["view", "create"]
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

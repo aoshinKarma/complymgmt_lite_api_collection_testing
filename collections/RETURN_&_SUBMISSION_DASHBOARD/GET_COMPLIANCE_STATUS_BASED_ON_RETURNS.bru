@@ -1,0 +1,15 @@
+meta {
+  name: GET_COMPLIANCE_STATUS_BASED_ON_RETURNS
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/returns/compliance/status/based/returns
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

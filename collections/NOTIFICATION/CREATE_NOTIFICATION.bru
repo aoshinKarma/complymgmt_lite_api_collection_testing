@@ -1,0 +1,32 @@
+meta {
+  name: CREATE_NOTIFICATION
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/notification/create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+  	"group_holding_id"  :"68c018fdfd10806b378e96b2",
+  	"group_name"      :"KPMG",
+  	"company_id"        :"68c01910fd10806b378e96b4",
+  	"company_name"      :"J.P. Morgan Asset Managements",
+  	"location_id"       :"68c01920fd10806b378e96b6",
+  	"location_name"     :"Reliance Jio, Infocomm Limited, Bandra Kurla Complex, Mumbai, Maharashtra 400051",
+  	"template_id"       :"68d623f306e3de806bf229e1",
+  	"template_name"   : "TEST ABC",        
+  	"send_on"  :"2025-09-26",         
+      "send_to":["aoshin@karmamgmt.com","gaurav@karmamgmt.com"],
+      "cc":["support@karmamgmt.com","siddhant@karmamgmt.com"],
+  	"priority":"medium"   
+  }
+}
+
+settings {
+  encodeUrl: true
+}

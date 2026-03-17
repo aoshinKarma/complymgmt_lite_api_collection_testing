@@ -1,0 +1,19 @@
+meta {
+  name: CHECK_SESSION
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/check/session
+  body: text
+  auth: none
+}
+
+headers {
+  Authorization: some
+}
+
+settings {
+  encodeUrl: true
+}

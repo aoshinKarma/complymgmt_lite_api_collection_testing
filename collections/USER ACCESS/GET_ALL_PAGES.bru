@@ -1,0 +1,15 @@
+meta {
+  name: GET_ALL_PAGES
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/pages/view/all
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,15 @@
+meta {
+  name: GET_STATUS_COUNT_OF_OPEN_VS_CLOSED_CASES(not valid json - Pending)
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/general/helpdesk/assigned/status/count
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

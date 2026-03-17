@@ -1,0 +1,23 @@
+meta {
+  name: APPEND_TRACKER
+  type: http
+  seq: 17
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/client_master/append/tracker?tracker_name=Client Onboarding Master Tracker
+  body: multipartForm
+  auth: none
+}
+
+params:query {
+  tracker_name: Client Onboarding Master Tracker
+}
+
+body:multipart-form {
+  file: @file(/home/siddhant/Downloads/Client_Onboarding_Master_Final_16-05-2025 Outsource Payroll (1) (2) (1).xlsx)
+}
+
+settings {
+  encodeUrl: true
+}

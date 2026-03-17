@@ -1,0 +1,29 @@
+meta {
+  name: CREATE_COMPANY
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/company/create
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "CompanyName": "Hero MotoCorp Limited",
+      "CompanyCommonName": "Hero MotoCorp",
+      "CompanyDescription": "One of the world's largest two-wheeler manufacturers.",
+       "GroupHoldingsID": "6925866e852e6884cebef446",
+       "CompanySize":"Medium",
+       "CompanyIndustry":"Machines",
+    "CommonAttributes":{
+      "Created_By": "68bfcec7a46746af32958fd1"
+    }
+    }
+}
+
+settings {
+  encodeUrl: true
+}

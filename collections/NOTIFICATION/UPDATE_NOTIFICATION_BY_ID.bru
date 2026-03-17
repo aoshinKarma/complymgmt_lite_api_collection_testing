@@ -1,0 +1,37 @@
+meta {
+  name: UPDATE_NOTIFICATION_BY_ID
+  type: http
+  seq: 8
+}
+
+put {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/notification/update/68dbae3e81e75f7f75277f87
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "group_holding_id": "68d671ff55654bb4d5527fb4",
+      "group_name": "Suyash Global",
+      "company_id": "68d6720355654bb4d552802a",
+      "company_name": "Suyash Global Private Limited",
+      "location_id": "68da197a55654bb4d552884f",
+      "location_name": "Jogeshwari",
+      "template_id": "68dbae1781e75f7f75277f85",
+      "template_name": "Temp1",
+      "send_on": "2025-10-03",
+      "send_to": [
+          "admin@complymgmt.ai"
+      ],
+      "cc": [
+          "admin@complymgmt.ai"
+      ],
+      "priority": "MEDIUM",
+      "status":"PENDING"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

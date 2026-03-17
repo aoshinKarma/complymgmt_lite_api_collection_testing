@@ -1,0 +1,19 @@
+meta {
+  name: SEND_EMAIL_TO_USERS
+  type: http
+  seq: 16
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/client_master/send/email
+  body: none
+  auth: inherit
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+settings {
+  encodeUrl: true
+}

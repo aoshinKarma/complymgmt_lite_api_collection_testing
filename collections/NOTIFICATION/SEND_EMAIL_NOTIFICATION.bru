@@ -1,0 +1,15 @@
+meta {
+  name: SEND_EMAIL_NOTIFICATION
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/cron/send/email
+  body: json
+  auth: none
+}
+
+settings {
+  encodeUrl: true
+}

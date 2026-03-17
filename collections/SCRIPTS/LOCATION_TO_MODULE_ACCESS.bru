@@ -1,0 +1,19 @@
+meta {
+  name: LOCATION_TO_MODULE_ACCESS
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/client_master/user_accesses/location_to_module/create
+  body: none
+  auth: inherit
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+settings {
+  encodeUrl: true
+}

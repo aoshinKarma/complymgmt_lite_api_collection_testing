@@ -1,0 +1,15 @@
+meta {
+  name: GET_EXPLANATION_OF_EMPLOYEE_COUNT
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/payroll/explanation/employee/count
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
