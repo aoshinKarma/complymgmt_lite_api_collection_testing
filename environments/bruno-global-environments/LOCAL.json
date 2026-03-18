@@ -1,0 +1,45 @@
+{
+  "name": "LOCAL",
+  "variables": [
+    {
+      "name": "PROTO",
+      "value": "http://",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "HOST",
+      "value": "127.0.0.1",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "PORT",
+      "value": "9000",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "VERSION",
+      "value": "v1",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "authToken",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzM4OTkzMzQsImlhdCI6MTc3MzgxMjkzNCwidXNlcl9pZCI6IjY5MGM4YjJkNWQxZTg4MzVjNTM5ZmM5MiJ9.6_wfOgzd6onYJen0BUQOLgAe00xf5xPMpbedOztmQlM",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    }
+  ],
+  "info": {
+    "type": "bruno-environment",
+    "exportedAt": "2026-03-18T08:21:36.427Z",
+    "exportedUsing": "Bruno/v3.1.4"
+  }
+}

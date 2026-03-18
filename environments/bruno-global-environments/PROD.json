@@ -1,0 +1,38 @@
+{
+  "name": "PROD",
+  "variables": [
+    {
+      "name": "PROTO",
+      "value": "https://",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "HOST",
+      "value": "api.complymgmt.ai",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "PORT",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "VERSION",
+      "value": "v1",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    }
+  ],
+  "info": {
+    "type": "bruno-environment",
+    "exportedAt": "2026-03-18T08:21:36.441Z",
+    "exportedUsing": "Bruno/v3.1.4"
+  }
+}
