@@ -7,7 +7,7 @@ meta {
 get {
   url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/compliance/cockpit/client-data
   body: none
-  auth: none
+  auth: inherit
 }
 
 headers {
@@ -16,4 +16,5 @@ headers {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

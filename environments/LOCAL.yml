@@ -8,3 +8,5 @@ variables:
     value: "9000"
   - name: VERSION
     value: v1
+  - name: authToken
+    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzM4OTkzMzQsImlhdCI6MTc3MzgxMjkzNCwidXNlcl9pZCI6IjY5MGM4YjJkNWQxZTg4MzVjNTM5ZmM5MiJ9.6_wfOgzd6onYJen0BUQOLgAe00xf5xPMpbedOztmQlM

@@ -3,12 +3,9 @@ meta {
 }
 
 auth {
-  mode: none
+  mode: bearer
 }
 
-script:pre-request {
-  req.getHeaders().add({
-      key: "Authorization",
-      value: bru.getGlobalEnvVar("authToken")
-  });
+auth:bearer {
+  token: {{authToken}}
 }

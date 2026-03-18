@@ -5,3 +5,10 @@ meta {
 auth {
   mode: none
 }
+
+script:post-response {
+  var jsonData = res.getBody();
+  bru.setEnvVar("authToken", jsonData.token);
+  console.log(jsonData.token)
+   
+}
