@@ -1,4 +1,5 @@
 name: TESTING
+type: environment
 variables:
   - name: PROTO
     value: http://
@@ -9,4 +10,4 @@ variables:
   - name: VERSION
     value: v1
   - name: authToken
-    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzM4OTcxMjIsImlhdCI6MTc3MzgxMDcyMiwidXNlcl9pZCI6IjY5MGM4YjJkNWQxZTg4MzVjNTM5ZmM5MiJ9.JgETDgNRaQCwRAxUmMOYUxe1yJLR2V2Xa03xXaLRuiw
+    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzM5MDE5MzYsImlhdCI6MTc3MzgxNTUzNiwidXNlcl9pZCI6IjY5MGM4YjJkNWQxZTg4MzVjNTM5ZmM5MiJ9.msdvJzCLzDsJQGlSFV0Ba_bAvngQgkdxayKSb8b4h-w

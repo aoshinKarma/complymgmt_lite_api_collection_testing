@@ -1,4 +1,5 @@
 name: PROD
+type: environment
 variables:
   - name: PROTO
     value: https://
