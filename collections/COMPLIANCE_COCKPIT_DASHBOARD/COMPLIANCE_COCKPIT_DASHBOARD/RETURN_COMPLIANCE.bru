@@ -1,0 +1,19 @@
+meta {
+  name: RETURN_COMPLIANCE
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/compliance/cockpit/overall/return
+  body: none
+  auth: none
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+settings {
+  encodeUrl: true
+}

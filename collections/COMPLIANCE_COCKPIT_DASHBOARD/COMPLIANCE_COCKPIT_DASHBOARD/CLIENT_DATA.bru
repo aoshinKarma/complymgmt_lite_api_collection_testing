@@ -1,0 +1,19 @@
+meta {
+  name: CLIENT_DATA
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/compliance/cockpit/client-data
+  body: none
+  auth: none
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+settings {
+  encodeUrl: true
+}

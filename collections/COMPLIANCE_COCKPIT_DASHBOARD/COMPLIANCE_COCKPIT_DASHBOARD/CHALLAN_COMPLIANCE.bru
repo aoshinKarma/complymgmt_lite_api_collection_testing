@@ -1,0 +1,19 @@
+meta {
+  name: CHALLAN_COMPLIANCE
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/dashboard/view/compliance/cockpit/overall/challan
+  body: none
+  auth: none
+}
+
+headers {
+  Referer: https://complymgmt.ai
+}
+
+settings {
+  encodeUrl: true
+}

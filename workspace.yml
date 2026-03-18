@@ -60,9 +60,11 @@ collections:
     path: "collections/USER"
   - name: "WIDGETS"
     path: "collections/WIDGETS"
+  - name: "COMPLIANCE_COCKPIT_DASHBOARD"
+    path: "collections/COMPLIANCE_COCKPIT_DASHBOARD/COMPLIANCE_COCKPIT_DASHBOARD"
 
 specs:
 
 docs: ''
 
-activeEnvironmentUid: k2pyd2000000000000000
+activeEnvironmentUid: 1rhqrlx00000000000000
