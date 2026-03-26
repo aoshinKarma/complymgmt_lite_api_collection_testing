@@ -5,9 +5,9 @@ meta {
 }
 
 put {
-  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/module_by_location/update/status/6892eda663e523485d0acfcb
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/module_by_location/update/status/69b927e48f77a748c265fc98
   body: json
-  auth: none
+  auth: inherit
 }
 
 body:json {
@@ -18,4 +18,5 @@ body:json {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

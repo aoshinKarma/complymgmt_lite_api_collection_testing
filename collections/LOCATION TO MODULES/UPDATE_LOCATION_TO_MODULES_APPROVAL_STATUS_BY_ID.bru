@@ -5,22 +5,12 @@ meta {
 }
 
 put {
-  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/location_to_module/update/approval_status/689b218ad832b1fb38a784fa
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/location_to_module/update/approval_status/69b927e48f77a748c265fc98
   body: text
-  auth: none
-}
-
-body:text {
-  {
-      "SubModuleName": "test BC",
-      "SubModuleDescription": "test",
-      "ModuleID":"689b212dd832b1fb38a784f6",
-      "CommonAttributes": {
-        "Created_By": "689623663511438da6a85db8"
-      }
-  }
+  auth: inherit
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

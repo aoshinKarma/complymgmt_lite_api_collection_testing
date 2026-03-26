@@ -1,0 +1,16 @@
+meta {
+  name: GET_ALL_LCATION_TO_MODULES
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/location_to_module/view/multiple
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -7,9 +7,10 @@ meta {
 delete {
   url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/module_by_location/delete/6892ecda63e523485d0acfc7
   body: none
-  auth: none
+  auth: inherit
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

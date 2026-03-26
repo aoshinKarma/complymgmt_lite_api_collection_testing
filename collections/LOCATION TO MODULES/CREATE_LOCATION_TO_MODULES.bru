@@ -7,21 +7,21 @@ meta {
 post {
   url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/location_to_module/create
   body: json
-  auth: none
+  auth: inherit
 }
 
 body:json {
   {
-      "CompanyID": "69258696852e6884cebef447",
-      "LocationID":"6965f20da2567b71d0fb1fc5",
-  	"ModuleID":"690c8c4e5d1e8835c539fca9",
-  	"SubmoduleID":"690c8c4e5d1e8835c539fcad",
-      "CommonAttributes": {
-        "Created_By": "690c8b2d5d1e8835c539fc92"
-      }
+      "CompanyID": "69b91b0242dfb4a0b81022e3",
+      "LocationID":"69b9255958913544f0e1b32e",
+    "ModuleID":"690c8c4e5d1e8835c539fca3",
+    "SubmoduleID":"690c8c4e5d1e8835c539fca8"
   }
+  
+  
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
