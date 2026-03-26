@@ -7,7 +7,7 @@ meta {
 put {
   url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/company_location/update/approval_status/689b204dd832b1fb38a784f4
   body: json
-  auth: none
+  auth: inherit
 }
 
 body:json {
@@ -18,4 +18,5 @@ body:json {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

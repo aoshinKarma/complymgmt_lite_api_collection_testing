@@ -7,9 +7,10 @@ meta {
 get {
   url: {{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/company_location/view/multiple
   body: none
-  auth: none
+  auth: inherit
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
