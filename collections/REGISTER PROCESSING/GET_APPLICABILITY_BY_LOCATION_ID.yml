@@ -1,0 +1,15 @@
+info:
+  name: GET_APPLICABILITY_BY_LOCATION_ID
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/register_processing/view/applicabilities/location/690c8d115d1e8835c53a10d8"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

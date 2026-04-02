@@ -1,0 +1,27 @@
+info:
+  name: CREATE_APPLICABILITY
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/create/applicability"
+  body:
+    type: json
+    data: |-
+      {
+          "location_id": "69cca8292850a32450e366dc",
+          "register_id": "69cb8218a0088d7e5f423a80"
+      }
+  auth: inherit
+
+runtime:
+  variables:
+    - name: v2
+      value: v2
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,51 @@
+info:
+  name: PROCESS_REGISTER
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/create/process/register?by=group&location_id=69be5199ee491c947a2beae6&month=January&from=01-01-2026&to=31-01-2026&year=2026&company_id=69be50f85c668d15ca8c9ea6&branchCol=BranchName&group_id=69be4fedee491c947a2beae5&siteCol=SiteName"
+  params:
+    - name: by
+      value: group
+      type: query
+    - name: location_id
+      value: 69be5199ee491c947a2beae6
+      type: query
+    - name: month
+      value: January
+      type: query
+    - name: from
+      value: 01-01-2026
+      type: query
+    - name: to
+      value: 31-01-2026
+      type: query
+    - name: year
+      value: "2026"
+      type: query
+    - name: company_id
+      value: 69be50f85c668d15ca8c9ea6
+      type: query
+    - name: branchCol
+      value: BranchName
+      type: query
+    - name: group_id
+      value: 69be4fedee491c947a2beae5
+      type: query
+    - name: siteCol
+      value: SiteName
+      type: query
+  body:
+    type: form-urlencoded
+    data:
+      - name: file
+        value: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

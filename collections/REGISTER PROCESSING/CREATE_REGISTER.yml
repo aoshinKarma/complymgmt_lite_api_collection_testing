@@ -1,0 +1,54 @@
+info:
+  name: CREATE_REGISTER
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/create/register"
+  body:
+    type: json
+    data: |+
+      {
+        "name": "Form A Maternity Benefit Register",
+          "state": "Tamilnadu",
+        "headers": [
+          "Emp ID",
+          "Name of woman and her father’s(or if married husband’s) name",
+          "Date of appointment",
+        "Department in which employed.",
+          "Nature of work",
+          "Dates (with month and year) on which she is laid off and not employed.",
+          "Date on which the woman gives notice under Section 6",
+          "Date of discharge/dismissals, if any",
+         "Date of production of proof of pregnancy under Section 6",
+          "Date of birth of child",
+          "Date of production of proof of delivery/miscarriage/death",
+          "Date of production of proof of illness referred to in Section 10",
+          "Date with the amount of maternity benefit paid in advance of expected delivery",
+          "Date with the amount of subsequent payment of maternity benefit",
+          "Date with the amount of bonus, if paid under Section 8",
+          "Date with the amount of wages paid on account of leave under Section 9",
+          "Date with the amount of wages paid on account of leave under Section 10 and period of leave granted",
+          "Name of the person nominated by the woman under Section 6",
+          "If the woman dies, the date of her death, the name of the person to whom maternity benefit and/or other amount was paid, the amount thereof and the date of payment",
+          "If the woman dies, and the child survives, the name of the person to whom the amount of maternity benefit was paid on behalf of the child and the period for which it was paid",
+          "Signature of the employer of the establishment authenticating the entries in the muster roll",
+          "Remarks column for the use of the Inspector",
+        ],
+        "template_path": "template/register_processing/Form_A_Maternity_Benefit_Register_Tamilnadu.html",
+        "type": "file"
+      }
+
+  auth: inherit
+
+runtime:
+  variables:
+    - name: v2
+      value: v2
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

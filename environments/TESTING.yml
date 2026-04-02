@@ -9,4 +9,4 @@ variables:
   - name: VERSION
     value: v1
   - name: authToken
-    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzQ2MTE3NzgsImlhdCI6MTc3NDUyNTM3OCwidXNlcl9pZCI6IjY5MGM4YjJkNWQxZTg4MzVjNTM5ZmM5MiJ9.dBrfCjDj-g1Py6_vwKxy-vEVvGqhmuA5TFan4oa9qYc
+    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzUxNDkwNTgsImlhdCI6MTc3NTA2MjY1OCwidXNlcl9pZCI6IjY5MGM4YjJkNWQxZTg4MzVjNTM5ZmM5MiJ9.YYAEJiE8DJcSB8yaIIeZJPSIcwHjddn03f_MFk-DjSE

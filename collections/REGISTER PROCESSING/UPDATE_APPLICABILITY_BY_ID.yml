@@ -1,0 +1,22 @@
+info:
+  name: UPDATE_APPLICABILITY_BY_ID
+  type: http
+  seq: 8
+
+http:
+  method: PUT
+  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/update/applicability/69c1702ba7812cd783d815dc"
+  body:
+    type: json
+    data: |-
+      {
+        "register_id": "69c16e42d87fcb29f62cf334",
+        "location_id": "69be5199ee491c947a2beae6"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

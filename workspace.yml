@@ -62,6 +62,8 @@ collections:
     path: "collections/WIDGETS"
   - name: "COMPLIANCE_COCKPIT_DASHBOARD"
     path: "collections/COMPLIANCE_COCKPIT_DASHBOARD/COMPLIANCE_COCKPIT_DASHBOARD"
+  - name: "REGISTER PROCESSING"
+    path: "collections/REGISTER PROCESSING"
 
 specs:
 

@@ -1,0 +1,95 @@
+info:
+  name: CREATE_MAPPING
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/create/mapping"
+  body:
+    type: json
+    data: |-
+      {
+        "applicability_id": "69cbba79e4ce12effcf9f0c2",
+        "config": {
+          "steps": [
+            {
+              "type": "transform",
+              "config": {
+                "transform": {
+                  "mappings": [
+                    {
+                      "source": [
+                        "full_name"
+                      ],
+                      "target": "Name of employee with father's/husband's name",
+                      "transformation": "DIRECT"
+                    },
+                    {
+                      "source": [
+                        "designation"
+                      ],
+                      "target": "Designation",
+                      "transformation": "DIRECT"
+                    },
+                    {
+                      "source": [
+                        "wages"
+                      ],
+                      "target": "Rate of wages payable Basic + Allowances",
+                      "transformation": "DIRECT"
+                    },
+                    {
+                      "source": [
+                        "total_attendance"
+                      ],
+                      "target": "Total Attendance/units of work done",
+                      "transformation": "DEFAULT"
+                    },
+                    {
+                      "source": [
+                        "overtime_wages"
+                      ],
+                      "target": "Overtime wages ",
+                      "transformation": "DEFAULT"
+                    },
+                    {
+                      "source": [
+                        "gross_wages"
+                      ],
+                      "target": "Gross wages payable",
+                      "transformation": "DEFAULT"
+                    },
+                    {
+                      "source": [
+                        "total_deductions"
+                      ],
+                      "target": "Total Deductions if any ",
+                      "transformation": "DEFAULT"
+                    },
+                    {
+                      "source": [
+                        "net_wages"
+                      ],
+                      "target": "Net Wages ",
+                      "transformation": "DEFAULT"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+      }
+      }
+  auth: inherit
+
+runtime:
+  variables:
+    - name: v2
+      value: v2
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
