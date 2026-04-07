@@ -1,11 +1,11 @@
 info:
-  name: GET_APPLICABILITY_BY_COMPANY_ID
+  name: GET_MAPPINGS_BY_ID
   type: http
-  seq: 1
+  seq: 13
 
 http:
   method: GET
-  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{V2}}/register_processing/view/applicabilities/company/69be50f85c668d15ca8c9ea6"
+  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{V2}}/register_processing/view/mapping/69c505722cbe4815e4da9623"
   auth: inherit
 
 runtime:

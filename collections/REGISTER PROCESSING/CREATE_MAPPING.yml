@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "applicability_id": "69cbba79e4ce12effcf9f0c2",
+        "applicability_id": "69cbb8ab1d7c0e85dd8de864",
         "config": {
           "steps": [
             {
@@ -20,66 +20,86 @@ http:
                   "mappings": [
                     {
                       "source": [
-                        "full_name"
+                        "S.No"
                       ],
-                      "target": "Name of employee with father's/husband's name",
+                      "target": "S.No",
                       "transformation": "DIRECT"
                     },
                     {
                       "source": [
-                        "designation"
+                        "Name of employee"
                       ],
-                      "target": "Designation",
+                      "target": "Name of employee",
                       "transformation": "DIRECT"
                     },
                     {
                       "source": [
-                        "wages"
+                        "Father's/Husband's name"
                       ],
-                      "target": "Rate of wages payable Basic + Allowances",
+                      "target": "Father's/Husband's name",
                       "transformation": "DIRECT"
                     },
                     {
                       "source": [
-                        "total_attendance"
+                        "Sex"
                       ],
-                      "target": "Total Attendance/units of work done",
-                      "transformation": "DEFAULT"
+                      "target": "Sex",
+                      "transformation": "DIRECT"
                     },
                     {
                       "source": [
-                        "overtime_wages"
+                        "Department"
                       ],
-                      "target": "Overtime wages ",
-                      "transformation": "DEFAULT"
+                      "target": "Department",
+                      "transformation": "DIRECT"
                     },
                     {
                       "source": [
-                        "gross_wages"
+                        "Nature and date of the offence for which fine imposed"
                       ],
-                      "target": "Gross wages payable",
-                      "transformation": "DEFAULT"
+                      "target": "Nature and date of the offence for which fine imposed",
+                      "transformation": "DIRECT"
                     },
                     {
                       "source": [
-                        "total_deductions"
+                        "Whether employee showed cause against fine or not, if so, enter date"
                       ],
-                      "target": "Total Deductions if any ",
-                      "transformation": "DEFAULT"
+                      "target": "Whether employee showed cause against fine or not, if so, enter date",
+                      "transformation": "DIRECT"
                     },
                     {
                       "source": [
-                        "net_wages"
+                        "Rate of Wages"
                       ],
-                      "target": "Net Wages ",
-                      "transformation": "DEFAULT"
+                      "target": "Rate of Wages",
+                      "transformation": "DIRECT"
+                    },
+                    {
+                      "source": [
+                        "Date and amount of fine imposed"
+                      ],
+                      "target": "Date and amount of fine imposed",
+                      "transformation": "DIRECT"
+                    },
+                    {
+                      "source": [
+                        "Date on which fine realised"
+                      ],
+                      "target": "Date on which fine realised",
+                      "transformation": "DIRECT"
+                    },
+                    {
+                      "source": [],
+                      "target": "Remarks",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
                     }
                   ]
                 }
               }
             }
           ]
-      }
+        }
       }
   auth: inherit
 

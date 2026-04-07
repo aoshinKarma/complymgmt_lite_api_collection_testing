@@ -8,6 +8,11 @@ http:
   url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/delete/applicability/69c1702ba7812cd783d815dc"
   auth: inherit
 
+runtime:
+  variables:
+    - name: v2
+      value: v2
+
 settings:
   encodeUrl: true
   timeout: 0

@@ -44,6 +44,11 @@ http:
         value: ""
   auth: inherit
 
+runtime:
+  variables:
+    - name: v2
+      value: v2
+
 settings:
   encodeUrl: true
   timeout: 0

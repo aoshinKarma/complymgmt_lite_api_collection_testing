@@ -1,0 +1,183 @@
+info:
+  name: UPDATE_MAPPING_BY_ID
+  type: http
+  seq: 10
+
+http:
+  method: PUT
+  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/update/mapping/69cd56b65da64f3eb3acae52"
+  body:
+    type: json
+    data: |-
+      {
+        "applicability_id": "69cbb8ab1d7c0e85dd8de864",
+        "config": {
+          "steps": [
+            {
+              "type": "filter",
+              "config": {
+                "filter": {
+                  "expression": "Gender == 'Female'"
+                }
+              }
+            },
+            {
+              "type": "transform",
+              "config": {
+                "transform": {
+                  "mappings": [
+                    {
+                      "source": [
+                        "EmployeeName"
+                      ],
+                      "target": "Name of woman and her father's (or if married husband's) name",
+                      "transformation": "DIRECT"
+                    },
+                    {
+                      "source": [
+                        "DOJ"
+                      ],
+                      "target": "Date of appointment",
+                      "transformation": "DIRECT"
+                    },
+                    {
+                      "source": [
+                        "PseudoName"
+                      ],
+                      "target": "Department in which employed",
+                      "transformation": "DIRECT"
+                    },
+                    {
+                      "source": [
+                        "PseudoName"
+                      ],
+                      "target": "Nature of work",
+                      "transformation": "DIRECT"
+                    },
+                    {
+                      "source": [],
+                      "target": "Dates (with month and year) on which she is laid off and not employed",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date on which woman gives notice under Section 6",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date of discharge/dismissal, if any",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date of production of proof of pregnancy under Section 6",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date of birth of child",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date of production of proof of delivery/miscarriage/death",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date of production of proof of illness referred to in Section 10",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date with the amount of maternity benefit paid in advance of expected delivery",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date with amount of subsequent payment of maternity benefit",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date with amount of bonus, if any, paid under Section 8",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date with amount of maternity benefit paid in advance",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date with the amount of wages paid on account of leave under Section 9",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date with the amount of wages paid on account of leave under Section 10 and period of leave granted",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Name of the person nominated by the woman under Section 6",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "If the woman dies, the date of her death, the name of the person to whom maternity benefit and/or other amount was paid, the amount thereof and the date of payment",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "If the woman dies, and the child survives, the name of the person to whom the amount of maternity benefit was paid on behalf of the child and the period for which it was paid",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Signature of the employer of the establishment authenticating the entries in the muster roll",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Remarks column for the use of the Inspector",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+  auth: inherit
+
+runtime:
+  variables:
+    - name: v2
+      value: v2
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

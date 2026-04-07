@@ -1,0 +1,15 @@
+info:
+  name: DELETE_MAPPING_BY_ID
+  type: http
+  seq: 11
+
+http:
+  method: DELETE
+  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/delete/mapping/69cd59b55da64f3eb3acae53"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
