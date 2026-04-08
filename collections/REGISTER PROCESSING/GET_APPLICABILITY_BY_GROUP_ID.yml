@@ -11,7 +11,7 @@ http:
 runtime:
   variables:
     - name: V2
-      value: v
+      value: v2
 
 settings:
   encodeUrl: true

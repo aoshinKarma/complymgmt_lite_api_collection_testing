@@ -10,41 +10,43 @@ http:
     type: json
     data: |-
       {
-        "applicability_id": "69cced1e8fe2af311670a662",
+        "applicability_id": "69cbcacca0088d7e5f423a85",
         "config": {
           "steps": [
-            {
-              "type": "filter",
-              "config": {
-                "filter": {
-                  "expression": "Gender == 'Female'"
-                }
-              }
-            },
             {
               "type": "transform",
               "config": {
                 "transform": {
                   "mappings": [
                     {
+                      "source": [],
+                      "target": "S. No",
+                      "transformation": "GENERATE"
+                    },
+                    {
+                      "source": [
+                        "RegNo"
+                      ],
+                      "target": "Emp ID",
+                      "transformation": "DIRECT"
+                    },
+                    {
                       "source": [
                         "EmployeeName"
                       ],
-                      "target": "Name of the woman",
+                      "target": "Full Name of Employee",
+                      "transformation": "DIRECT"
+                    },
+                    {
+                      "source": [],
+                      "target": "No. of days worked",
                       "transformation": "DIRECT"
                     },
                     {
                       "source": [
-                        "DOJ"
+                        
                       ],
-                      "target": "Date of appointment",
-                      "transformation": "DIRECT"
-                    },
-                    {
-                      "source": [
-                        "PseudoName"
-                      ],
-                      "target": "Department in which employed",
+                      "target": "Minimum Rate of Wages Payable",
                       "transformation": "DIRECT"
                     },
                     {
@@ -61,7 +63,9 @@ http:
                       "expression": "NIL"
                     },
                     {
-                      "source": [],
+                      "source": [
+                        "Total Days"
+                      ],
                       "target": "Total days employed in the month",
                       "transformation": "DEFAULT",
                       "expression": "NIL"

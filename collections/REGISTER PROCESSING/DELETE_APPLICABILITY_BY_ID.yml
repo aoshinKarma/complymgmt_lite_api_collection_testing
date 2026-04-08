@@ -5,7 +5,7 @@ info:
 
 http:
   method: DELETE
-  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/delete/applicability/69c1702ba7812cd783d815dc"
+  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/delete/applicability/69cbcac4e4ce12effcf9f0c3"
   auth: inherit
 
 runtime:

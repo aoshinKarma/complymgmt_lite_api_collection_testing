@@ -5,13 +5,13 @@ info:
 
 http:
   method: PUT
-  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/update/applicability/69c1702ba7812cd783d815dc"
+  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/update/applicability/69cbcac4e4ce12effcf9f0c3"
   body:
     type: json
     data: |-
       {
-        "register_id": "69c16e42d87fcb29f62cf334",
-        "location_id": "69be5199ee491c947a2beae6"
+        "register_id": "69cb7ca16a6d4a2b28249fd6",
+        "location_id": "69be5210a0529bb2bbcdac3a"
       }
   auth: inherit
 

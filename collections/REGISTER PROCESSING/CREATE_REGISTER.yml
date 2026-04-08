@@ -34,7 +34,7 @@ http:
           "If the woman dies, the date of her death, the name of the person to whom maternity benefit and/or other amount was paid, the amount thereof and the date of payment",
           "If the woman dies, and the child survives, the name of the person to whom the amount of maternity benefit was paid on behalf of the child and the period for which it was paid",
           "Signature of the employer of the establishment authenticating the entries in the muster roll",
-          "Remarks column for the use of the Inspector",
+          "Remarks column for the use of the Inspector"
         ],
         "template_path": "template/register_processing/Form_A_Maternity_Benefit_Register_Tamilnadu.html",
         "type": "file"

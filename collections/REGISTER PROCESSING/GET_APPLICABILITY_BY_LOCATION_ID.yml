@@ -5,8 +5,15 @@ info:
 
 http:
   method: GET
-  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{VERSION}}/register_processing/view/applicabilities/location/690c8d115d1e8835c53a10d8"
+  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{V2}}/register_processing/view/applicabilities/location/69be5210a0529bb2bbcdac3a"
   auth: inherit
+
+runtime:
+  variables:
+    - name: v2
+      value: v2
+    - name: V2
+      value: v2
 
 settings:
   encodeUrl: true
