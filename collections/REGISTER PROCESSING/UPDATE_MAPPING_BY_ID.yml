@@ -5,12 +5,11 @@ info:
 
 http:
   method: PUT
-  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/update/mapping/69cd56b65da64f3eb3acae52"
+  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/update/mapping/69ccf1ed86c8fc11c45a55fc"
   body:
     type: json
     data: |-
       {
-        "applicability_id": "69cbb8ab1d7c0e85dd8de864",
         "config": {
           "steps": [
             {

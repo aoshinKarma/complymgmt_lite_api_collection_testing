@@ -10,9 +10,17 @@ http:
     type: json
     data: |-
       {
-        "applicability_id": "69cbb8ab1d7c0e85dd8de864",
+        "applicability_id": "69cced1e8fe2af311670a662",
         "config": {
           "steps": [
+            {
+              "type": "filter",
+              "config": {
+                "filter": {
+                  "expression": "Gender == 'Female'"
+                }
+              }
+            },
             {
               "type": "transform",
               "config": {
@@ -20,77 +28,119 @@ http:
                   "mappings": [
                     {
                       "source": [
-                        "S.No"
+                        "EmployeeName"
                       ],
-                      "target": "S.No",
+                      "target": "Name of the woman",
                       "transformation": "DIRECT"
                     },
                     {
                       "source": [
-                        "Name of employee"
+                        "DOJ"
                       ],
-                      "target": "Name of employee",
+                      "target": "Date of appointment",
                       "transformation": "DIRECT"
                     },
                     {
                       "source": [
-                        "Father's/Husband's name"
+                        "PseudoName"
                       ],
-                      "target": "Father's/Husband's name",
+                      "target": "Department in which employed",
                       "transformation": "DIRECT"
                     },
                     {
                       "source": [
-                        "Sex"
+                        "PseudoName"
                       ],
-                      "target": "Sex",
-                      "transformation": "DIRECT"
-                    },
-                    {
-                      "source": [
-                        "Department"
-                      ],
-                      "target": "Department",
-                      "transformation": "DIRECT"
-                    },
-                    {
-                      "source": [
-                        "Nature and date of the offence for which fine imposed"
-                      ],
-                      "target": "Nature and date of the offence for which fine imposed",
-                      "transformation": "DIRECT"
-                    },
-                    {
-                      "source": [
-                        "Whether employee showed cause against fine or not, if so, enter date"
-                      ],
-                      "target": "Whether employee showed cause against fine or not, if so, enter date",
-                      "transformation": "DIRECT"
-                    },
-                    {
-                      "source": [
-                        "Rate of Wages"
-                      ],
-                      "target": "Rate of Wages",
-                      "transformation": "DIRECT"
-                    },
-                    {
-                      "source": [
-                        "Date and amount of fine imposed"
-                      ],
-                      "target": "Date and amount of fine imposed",
-                      "transformation": "DIRECT"
-                    },
-                    {
-                      "source": [
-                        "Date on which fine realised"
-                      ],
-                      "target": "Date on which fine realised",
+                      "target": "Nature of work",
                       "transformation": "DIRECT"
                     },
                     {
                       "source": [],
-                      "target": "Remarks",
+                      "target": "Dates (with month and year) on which she is laid off and not employed.",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Total days employed in the month",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date on which woman gives payment period",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Notice under section 6 of the Maternity Benefit Act, 1961",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date of birth of child",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date of production of proof of pregnancy under section 6 of the Maternity Benefit Act, 1961",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date of production of proof of delivery/miscarriage/death",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Where the maternity benefit delivery, the date on which paid in advance before it is paid and the amount thereof",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date on which subsequent payment of maternity benefit is made and the amount thereof",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Where medical bonus is paid, the date on which it is paid and the amount thereof",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Date on which wages on account of leave are paid and amount thereof",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Name of the person nominated by the woman",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "If the woman dies, the date of her death, name of the person to whom maternity benefit and/or other amount was paid, the amount thereof, and the date of payment",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "If the woman dies and the child survives, the name of the person to whom the amount of maternity benefit was paid on behalf of the child and the period for which it was paid",
+                      "transformation": "DEFAULT",
+                      "expression": "NIL"
+                    },
+                    {
+                      "source": [],
+                      "target": "Remarks column for the use of the Inspector",
                       "transformation": "DEFAULT",
                       "expression": "NIL"
                     }

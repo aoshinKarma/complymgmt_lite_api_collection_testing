@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{V2}}/register_processing/view/mapping/69c505722cbe4815e4da9623"
+  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{V2}}/register_processing/view/mapping/69cbba4ce4ce12effcf9f0c0"
   auth: inherit
 
 runtime:

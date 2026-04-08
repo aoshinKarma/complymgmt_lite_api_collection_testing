@@ -1,0 +1,51 @@
+info:
+  name: UPDATE_REGISTER_BY_ID
+  type: http
+  seq: 14
+
+http:
+  method: PUT
+  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/update/register/69cb7ca16a6d4a2b28249fd6"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Form 10 Maternity",
+        "state": "Maharashtra",
+        "headers": [
+          "Emp ID",
+          "Name of the woman",
+          "Date of appointment",
+          "Department in which employed",
+          "Nature of work",
+          "Dates (with month and year) on which she is laid off and not employed",
+          "Total days employed in the month",
+          "Date on which woman gives payment period",
+          "Notice under section 6 of the Maternity Benefit Act, 1961",
+          "Date of birth of child",
+          "Date of production of proof of pregnancy under section 6 of the Maternity Benefit Act, 1961",
+          "Date of production of proof of delivery/miscarriage/death",
+          "Where the maternity benefit delivery, the date on which paid in advance before it is paid and the amount thereof",
+          "Date on which subsequent payment of maternity benefit is made and the amount thereof",
+          "Where medical bonus is paid, the date on which it is paid and the amount thereof",
+          "Date on which wages on account of leave are paid and amount thereof",
+          "Name of the person nominated by the woman",
+          "If the woman dies, the date of her death, name of the person to whom maternity benefit and/or other amount was paid, the amount thereof, and the date of payment",
+          "If the woman dies and the child survives, the name of the person to whom the amount of maternity benefit was paid on behalf of the child and the period for which it was paid",
+          "Remarks column for the use of Inspector"
+        ],
+        "template_path": "template/register_processing/Form_10_Maternity_Maharashtra.html",
+        "type": "file"
+      }
+  auth: inherit
+
+runtime:
+  variables:
+    - name: v2
+      value: v2
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

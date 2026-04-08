@@ -5,8 +5,13 @@ info:
 
 http:
   method: DELETE
-  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/delete/mapping/69cd59b55da64f3eb3acae53"
+  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/delete/mapping/69c3b7ed164eca0a1592e80a"
   auth: inherit
+
+runtime:
+  variables:
+    - name: v2
+      value: v2
 
 settings:
   encodeUrl: true
