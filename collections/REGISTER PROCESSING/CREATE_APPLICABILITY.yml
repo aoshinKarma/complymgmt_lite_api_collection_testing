@@ -10,8 +10,8 @@ http:
     type: json
     data: |-
       {
-          "location_id": "69cca8292850a32450e366dc",
-          "register_id": "69cb8218a0088d7e5f423a80"
+        "register_id": "69cba25000c730a04e319ae2",
+        "location_id": "69ce468e45445c8221829eb1"
       }
   auth: inherit
 

@@ -1,0 +1,20 @@
+info:
+  name: DELETE_REGISTER_BY_ID
+  type: http
+  seq: 15
+
+http:
+  method: DELETE
+  url: "{{PROTO}}{{HOST}}:{{PORT}}/api/{{v2}}/register_processing/delete/register/69c3b7ed164eca0a1592e80a"
+  auth: inherit
+
+runtime:
+  variables:
+    - name: v2
+      value: v2
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

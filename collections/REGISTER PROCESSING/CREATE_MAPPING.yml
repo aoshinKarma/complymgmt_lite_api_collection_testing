@@ -10,143 +10,93 @@ http:
     type: json
     data: |-
       {
-        "applicability_id": "69cbcacca0088d7e5f423a85",
+        "applicability_id": "69d74e23354a735b60b36d1e",
         "config": {
           "steps": [
+            {
+              "type": "filter",
+              "config": {
+                "filter": {
+                  "expression": "SalaryAdvance \u003e 0"
+                }
+              }
+            },
             {
               "type": "transform",
               "config": {
                 "transform": {
                   "mappings": [
                     {
-                      "source": [],
-                      "target": "S. No",
-                      "transformation": "GENERATE"
-                    },
-                    {
                       "source": [
-                        "RegNo"
+                        "SI.No."
                       ],
-                      "target": "Emp ID",
+                      "target": "S.No",
                       "transformation": "DIRECT"
                     },
                     {
                       "source": [
-                        "EmployeeName"
+                        "EMP NAME"
                       ],
-                      "target": "Full Name of Employee",
-                      "transformation": "DIRECT"
-                    },
-                    {
-                      "source": [],
-                      "target": "No. of days worked",
+                      "target": "Name of employee",
                       "transformation": "DIRECT"
                     },
                     {
                       "source": [
-                        
+                        "FatherName"
                       ],
-                      "target": "Minimum Rate of Wages Payable",
+                      "target": "Father's name",
                       "transformation": "DIRECT"
                     },
                     {
                       "source": [
-                        "PseudoName"
+                        "EmpRank"
                       ],
-                      "target": "Nature of work",
+                      "target": "Department",
                       "transformation": "DIRECT"
                     },
                     {
-                      "source": [],
-                      "target": "Dates (with month and year) on which she is laid off and not employed.",
-                      "transformation": "DEFAULT",
-                      "expression": "NIL"
+                      "source": [
+                        "PaymentDate",
+                        "SalaryAdvance"
+                      ],
+                      "target": "Date and amount of advance made",
+                      "transformation": "CONCAT",
+                      "expression": " - "
                     },
                     {
                       "source": [
-                        "Total Days"
+                        ""
                       ],
-                      "target": "Total days employed in the month",
-                      "transformation": "DEFAULT",
-                      "expression": "NIL"
+                      "target": "Purpose for which advance made",
+                      "transformation": "DEFAULT"
                     },
                     {
-                      "source": [],
-                      "target": "Date on which woman gives payment period",
-                      "transformation": "DEFAULT",
-                      "expression": "NIL"
+                      "source": [
+                        ""
+                      ],
+                      "target": "Number of instalments if any",
+                      "transformation": "DEFAULT"
                     },
                     {
-                      "source": [],
-                      "target": "Notice under section 6 of the Maternity Benefit Act, 1961",
-                      "transformation": "DEFAULT",
-                      "expression": "NIL"
+                      "source": [
+                        ""
+                      ],
+                      "target": "Postponements Granted",
+                      "transformation": "DEFAULT"
                     },
                     {
-                      "source": [],
-                      "target": "Date of birth of child",
-                      "transformation": "DEFAULT",
-                      "expression": "NIL"
+                      "source": [
+                        "PaymentDate"
+                      ],
+                      "target": "Date on which total amount realised",
+                      "transformation": "DIRECT"
                     },
                     {
-                      "source": [],
-                      "target": "Date of production of proof of pregnancy under section 6 of the Maternity Benefit Act, 1961",
-                      "transformation": "DEFAULT",
-                      "expression": "NIL"
-                    },
-                    {
-                      "source": [],
-                      "target": "Date of production of proof of delivery/miscarriage/death",
-                      "transformation": "DEFAULT",
-                      "expression": "NIL"
-                    },
-                    {
-                      "source": [],
-                      "target": "Where the maternity benefit delivery, the date on which paid in advance before it is paid and the amount thereof",
-                      "transformation": "DEFAULT",
-                      "expression": "NIL"
-                    },
-                    {
-                      "source": [],
-                      "target": "Date on which subsequent payment of maternity benefit is made and the amount thereof",
-                      "transformation": "DEFAULT",
-                      "expression": "NIL"
-                    },
-                    {
-                      "source": [],
-                      "target": "Where medical bonus is paid, the date on which it is paid and the amount thereof",
-                      "transformation": "DEFAULT",
-                      "expression": "NIL"
-                    },
-                    {
-                      "source": [],
-                      "target": "Date on which wages on account of leave are paid and amount thereof",
-                      "transformation": "DEFAULT",
-                      "expression": "NIL"
-                    },
-                    {
-                      "source": [],
-                      "target": "Name of the person nominated by the woman",
-                      "transformation": "DEFAULT",
-                      "expression": "NIL"
-                    },
-                    {
-                      "source": [],
-                      "target": "If the woman dies, the date of her death, name of the person to whom maternity benefit and/or other amount was paid, the amount thereof, and the date of payment",
-                      "transformation": "DEFAULT",
-                      "expression": "NIL"
-                    },
-                    {
-                      "source": [],
-                      "target": "If the woman dies and the child survives, the name of the person to whom the amount of maternity benefit was paid on behalf of the child and the period for which it was paid",
-                      "transformation": "DEFAULT",
-                      "expression": "NIL"
-                    },
-                    {
-                      "source": [],
-                      "target": "Remarks column for the use of the Inspector",
-                      "transformation": "DEFAULT",
-                      "expression": "NIL"
+                      "source": [
+                        ""
+                      ],
+                      "target": "Remarks",
+                      "transformation": "DEFAULT"
                     }
                   ]
                 }
